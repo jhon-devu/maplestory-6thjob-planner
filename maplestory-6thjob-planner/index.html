@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MapleStory 6th Job Planner</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <div class="min-h-screen flex items-center justify-center p-6">
+    <div class="bg-gray-800 p-6 rounded-lg w-full max-w-md">
+      <h1 class="text-2xl font-bold mb-4 text-center">6th Job Skill Planner</h1>
+      <label for="mapleranksUrl" class="block mb-2 text-sm">Paste your MapleRanks URL</label>
+      <input type="text" id="mapleranksUrl" placeholder="https://mapleranks.com/u/YourIGN"
+        class="w-full px-4 py-2 mb-4 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none" />
+      <button onclick="handleMapleranksLink()"
+        class="w-full bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded">
+        Start Tracking
+      </button>
+      <div class="text-center mt-4">
+        <span class="text-sm text-gray-400">or</span>
+      </div>
+      <div class="mt-4">
+        <label class="block mb-2 text-sm">Manual Entry</label>
+        <input type="text" id="manualName" placeholder="Character Name"
+          class="w-full px-4 py-2 mb-2 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none" />
+        <select id="manualClass"
+          class="w-full px-4 py-2 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none">
+          <option value="">Select Class</option>
+          <option value="Adele">Adele</option>
+          <option value="Ark">Ark</option>
+        </select>
+        <button onclick="handleManualEntry()"
+          class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
+          Continue
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

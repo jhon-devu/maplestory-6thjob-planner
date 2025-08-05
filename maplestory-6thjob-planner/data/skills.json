@@ -1,0 +1,48 @@
+{
+  "Adele": [
+    {
+      "name": "Tethered Unity",
+      "maxLevel": 30,
+      "fragmentCostPerLevel": 1,
+      "energyCostPerLevel": 100
+    },
+    {
+      "name": "Blade Symphony",
+      "maxLevel": 20,
+      "fragmentCostPerLevel": 2,
+      "energyCostPerLevel": 150
+    }
+  ],
+  "Ark": [
+    {
+      "name": "Unbound Will",
+      "maxLevel": 30,
+      "fragmentCostPerLevel": 1,
+      "energyCostPerLevel": 100
+    }
+  ],
+  "Wind Archer": [
+    {
+      "name": "Wind Walk",
+      "maxLevel": 30,
+      "fragmentCostPerLevel": 1,
+      "energyCostPerLevel": 100
+    }
+  ],
+  "Kanna": [  
+    {
+      "name": "Kishin Shoukan",
+      "maxLevel": 30,
+      "fragmentCostPerLevel": 1,
+      "energyCostPerLevel": 100
+    }
+  ],
+  "Kinesis": [  
+    {
+      "name": "Psychic Force",
+      "maxLevel": 30,
+      "fragmentCostPerLevel": 1,
+      "energyCostPerLevel": 100
+    }
+  ]
+}
