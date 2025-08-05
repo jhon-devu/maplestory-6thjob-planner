@@ -7,39 +7,72 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-900 text-white p-6 font-sans">
-  <h1 class="text-3xl font-bold mb-4">6th Job Skill Tracker</h1>
-  <div class="mb-6 flex items-center gap-4">
-    <img id="charSprite" class="w-16 h-16 rounded shadow" />
-    <div>
-      <p class="text-lg font-semibold">
-        <span id="charName"></span> (<span id="charClass"></span>)
-      </p>
-      <p class="text-sm text-gray-400">
-        Lv. <span id="charLevel">?</span> (<span id="charProgress">?</span>%) – <span id="charWorld">?</span>
-      </p>
+<body class="bg-gray-900 text-white font-sans min-h-screen p-6"></body>
+<!-- 🧍 Información del personaje activo -->
+<div class="mb-6 flex items-center gap-4">
+  <img id="charSprite" class="w-16 h-16 rounded shadow" />
+  <div>
+    <p class="text-lg font-semibold">
+      <span id="charName"></span> (<span id="charClass"></span>)
+    </p>
+    <p class="text-sm text-gray-400">
+      Lv. <span id="charLevel">?</span> (<span id="charProgress">?</span>%) – <span id="charWorld">?</span>
+    </p>
+  </div>
+</div>
+
+<!-- 🔽 Dropdown personalizado + botones -->
+<div class="mt-3 flex flex-col md:flex-row items-start md:items-center gap-4">
+
+  <!-- 🔽 Dropdown personalizado -->
+  <div class="relative w-64">
+    <label class="block text-sm text-gray-300 mb-1">Select Character:</label>
+
+    <!-- Botón principal que muestra el seleccionado -->
+    <button id="dropdownButton"
+      class="w-full bg-gray-800 border border-gray-600 px-4 py-2 rounded text-left flex justify-between items-center">
+      <span id="dropdownSelected">Select Character</span>
+      <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+
+    <!-- Lista desplegable (opciones se cargan con JS) -->
+    <div id="dropdownList"
+      class="absolute z-10 mt-1 w-full bg-gray-800 border border-gray-600 rounded shadow-lg hidden max-h-60 overflow-y-auto">
+      <!-- Aquí se insertan dinámicamente los personajes -->
     </div>
   </div>
 
-
-  <div id="skillsContainer" class="overflow-x-auto">
-    <table class="table-auto w-full text-left border-collapse">
-      <thead>
-        <tr class="bg-gray-800">
-          <th class="px-4 py-2">Skill</th>
-          <th class="px-4 py-2">Current Level</th>
-          <th class="px-4 py-2">Max Level</th>
-          <th class="px-4 py-2">Fragments Needed</th>
-          <th class="px-4 py-2">Energy Needed</th>
-        </tr>
-      </thead>
-      <tbody id="skillsTable" class="bg-gray-700">
-        <!-- Skills will be injected here -->
-      </tbody>
-    </table>
+  <!-- 🔘 Botones -->
+  <div class="flex gap-2">
+    <button onclick="deleteCurrentCharacter()" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded">🗑️
+      Delete</button>
+    <button onclick="goToAddCharacter()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">➕ Add
+      New</button>
   </div>
+</div>
 
-  <script src="dashboard.js"></script>
+<!-- 📋 Tabla de habilidades -->
+<div id="skillsContainer" class="overflow-x-auto mt-6">
+  <table class="table-auto w-full text-left border-collapse">
+    <thead>
+      <tr class="bg-gray-800">
+        <th class="px-4 py-2">Skill</th>
+        <th class="px-4 py-2">Current Level</th>
+        <th class="px-4 py-2">Max Level</th>
+        <th class="px-4 py-2">Fragments Needed</th>
+        <th class="px-4 py-2">Energy Needed</th>
+      </tr>
+    </thead>
+    <tbody id="skillsTable" class="bg-gray-700">
+      <!-- Skills will be injected here -->
+    </tbody>
+  </table>
+</div>
+<script src="home.js"></script>
+<script src="app.js"></script>
+<script src="dashboard.js"></script>
 </body>
 
 </html>

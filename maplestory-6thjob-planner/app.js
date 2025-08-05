@@ -1,4 +1,5 @@
-function handleMapleranksLink() {
+// ✅ Manejo del botón de ingresar MapleRanks
+async function handleMapleranksLink() {
   const url = document.getElementById('mapleranksUrl').value.trim();
   if (!url.includes('/u/')) {
     alert('Please enter a valid MapleRanks URL');
@@ -9,11 +10,17 @@ function handleMapleranksLink() {
   localStorage.setItem('ms_tracker_ign', ign);
   localStorage.setItem('ms_tracker_source', 'mapleranks');
 
-  fetchMapleranksData(ign).then(() => {
+  const data = await fetchMapleranksData(ign); // ahora devuelve el objeto con datos
+
+  if (data?.class) {
+    saveCharacterData(ign, data);
     window.location.href = 'dashboard.html';
-  });
+  } else {
+    alert('Could not fetch valid data from MapleRanks.');
+  }
 }
 
+// ✅ Obtener datos desde MapleRanks y devolverlos
 async function fetchMapleranksData(ign) {
   const proxiedUrl = `https://corsproxy.io/?https://mapleranks.com/u/${ign}`;
   const res = await fetch(proxiedUrl);
@@ -21,28 +28,32 @@ async function fetchMapleranksData(ign) {
   const parser = new DOMParser();
   const doc = parser.parseFromString(html, 'text/html');
 
+  const data = { sprite: '', class: '', world: '', level: '?', progress: '?' };
+
   // Sprite
   const img = doc.querySelector('img.card-img-top')?.src;
-  if (img) localStorage.setItem('ms_tracker_sprite', img);
+  if (img) data.sprite = img;
 
   // Clase + mundo
   const fullClass = doc.querySelector('p.card-text.mb-0')?.textContent.trim();
   if (fullClass) {
     const [job, ...worldParts] = fullClass.split(' in ');
-    localStorage.setItem('ms_tracker_class', job.trim());
-    localStorage.setItem('ms_tracker_world', worldParts.join(' in ').trim());
+    data.class = job.trim();
+    data.world = worldParts.join(' in ').trim();
   }
 
   // Nivel
   const levelText = doc.querySelector('h5.card-text')?.textContent;
   const levelMatch = levelText?.match(/Lv\.?\s?(\d+)\s?\(([\d.]+)%\)/);
-
   if (levelMatch) {
-    localStorage.setItem('ms_tracker_level', levelMatch[1]);
-    localStorage.setItem('ms_tracker_progress', levelMatch[2]);
+    data.level = levelMatch[1];
+    data.progress = levelMatch[2];
   }
+
+  return data;
 }
 
+// ✅ Manejo del formulario manual
 function handleManualEntry() {
   const name = document.getElementById('manualName').value.trim();
   const className = document.getElementById('manualClass').value;
@@ -51,8 +62,17 @@ function handleManualEntry() {
     return;
   }
 
+  const data = {
+    class: className,
+    world: '?',
+    level: '?',
+    progress: '?',
+    sprite: ''
+  };
+
   localStorage.setItem('ms_tracker_ign', name);
-  localStorage.setItem('ms_tracker_class', className);
   localStorage.setItem('ms_tracker_source', 'manual');
+
+  saveCharacterData(name, data);
   window.location.href = 'dashboard.html';
 }
