@@ -132,10 +132,20 @@ function updateCharacterPreview(data) {
   document.getElementById('previewClass').textContent = `${data.class || 'Class'} – ${data.world || 'World'}`;
 }
 
-const characters = JSON.parse(localStorage.getItem('characters')) || {};
-const current = localStorage.getItem('currentCharacter');
-const type = char.type || '';
-document.getElementById('charType').textContent = getTypeLabel(type);
+document.addEventListener('DOMContentLoaded', () => {
+  const characters = JSON.parse(localStorage.getItem('characters')) || {};
+  const current = localStorage.getItem('currentCharacter');
+  renderCustomDropdown(characters, current);
+});
+
+
+// ✅ Inicializar type si no existe
+Object.keys(characters).forEach((ign) => {
+  if (!characters[ign].type) {
+    characters[ign].type = 'main'; // o cualquier valor por defecto
+  }
+});
+localStorage.setItem('characters', JSON.stringify(characters));
 
 function renderCustomDropdown(characters, currentIgn) {
   const dropdownButton = document.getElementById('dropdownButton');
@@ -151,9 +161,13 @@ function renderCustomDropdown(characters, currentIgn) {
     const option = document.createElement('div');
     option.className = 'flex items-center justify-between gap-2 px-4 py-2 hover:bg-gray-700';
 
-    // 📌 Info: sprite + nombre
-    const info = document.createElement('div');
-    info.className = 'flex items-center gap-2 cursor-pointer';
+    // Contenedor izquierdo (imagen + nombre)
+    const infoContainer = document.createElement('div');
+    infoContainer.className = 'flex items-center gap-2 cursor-pointer';
+    infoContainer.onclick = () => {
+      localStorage.setItem('currentCharacter', ign);
+      location.reload();
+    };
 
     const img = document.createElement('img');
     img.src = char.sprite || 'assets/manualentry.png';
@@ -162,58 +176,47 @@ function renderCustomDropdown(characters, currentIgn) {
     const name = document.createElement('span');
     name.textContent = ign;
 
-    info.appendChild(img);
-    info.appendChild(name);
+    infoContainer.appendChild(img);
+    infoContainer.appendChild(name);
 
-    info.addEventListener('click', () => {
-      localStorage.setItem('currentCharacter', ign);
-      location.reload();
-    });
-
-    // 🎨 Selector de tipo (Main / Second / Ctene / Champion)
+    // Select de tipo
     const typeSelect = document.createElement('select');
-    typeSelect.className = 'text-sm px-2 py-1 rounded focus:outline-none';
-    const options = [
-      { label: 'Main', value: 'main', color: 'bg-green-200 text-green-900' },
-      { label: 'Second Main', value: 'second', color: 'bg-blue-200 text-blue-900' },
-      { label: 'Ctene Mule', value: 'ctene', color: 'bg-purple-200 text-purple-900' },
-      { label: 'Champion Mule', value: 'champion', color: 'bg-yellow-200 text-yellow-900' },
+    typeSelect.className = 'bg-gray-800 border border-gray-600 text-white text-xs rounded px-1 py-0.5';
+    const types = [
+      { value: 'main', label: 'Main' },
+      { value: 'second', label: 'Second Main' },
+      { value: 'mule', label: 'Ctene Mule' },
+      { value: 'champion', label: 'Champion Mule' }
     ];
 
-    options.forEach(opt => {
-      const optEl = document.createElement('option');
-      optEl.value = opt.value;
-      optEl.textContent = opt.label;
-      typeSelect.appendChild(optEl);
+    types.forEach(({ value, label }) => {
+      const opt = document.createElement('option');
+      opt.value = value;
+      opt.textContent = label;
+      if (char.type === value) opt.selected = true;
+      typeSelect.appendChild(opt);
     });
 
-    // Establecer color y valor inicial
-    typeSelect.value = char.type || '';
-    applyTypeStyle(typeSelect, typeSelect.value);
+    typeSelect.onchange = (e) => {
+      updateCharacterType(ign, e.target.value);
+    };
 
-    typeSelect.addEventListener('change', () => {
-      const selected = typeSelect.value;
-      applyTypeStyle(typeSelect, selected);
-      characters[ign].type = selected;
-      localStorage.setItem('characters', JSON.stringify(characters));
-    });
-
-    // ❌ Botón eliminar
+    // Botón de eliminar
     const deleteBtn = document.createElement('button');
-    deleteBtn.textContent = '❌';
-    deleteBtn.className = 'text-red-500 hover:text-red-700 font-bold';
-    deleteBtn.addEventListener('click', async (e) => {
+    deleteBtn.innerHTML = '❌';
+    deleteBtn.className = 'text-red-500 hover:text-red-700 text-sm ml-2';
+    deleteBtn.onclick = (e) => {
       e.stopPropagation();
-      const confirmDelete = await showConfirm(`Are you sure you want to delete ${ign}?`);
+      const confirmDelete = confirm(`Are you sure you want to delete ${ign}?`);
       if (!confirmDelete) return;
 
       delete characters[ign];
       localStorage.setItem('characters', JSON.stringify(characters));
 
       if (localStorage.getItem('currentCharacter') === ign) {
-        const keys = Object.keys(characters);
-        if (keys.length > 0) {
-          localStorage.setItem('currentCharacter', keys[0]);
+        const remaining = Object.keys(characters);
+        if (remaining.length > 0) {
+          localStorage.setItem('currentCharacter', remaining[0]);
         } else {
           localStorage.removeItem('currentCharacter');
         }
@@ -221,24 +224,16 @@ function renderCustomDropdown(characters, currentIgn) {
       } else {
         renderCustomDropdown(characters, localStorage.getItem('currentCharacter'));
       }
+    };
 
-      Toastify({
-        text: `Character "${ign}" deleted`,
-        duration: 3000,
-        gravity: "top",
-        position: "right",
-        backgroundColor: "#ef4444",
-      }).showToast();
-    });
+    // Contenedor derecho (select + botón eliminar)
+    const actionsContainer = document.createElement('div');
+    actionsContainer.className = 'flex items-center gap-2';
+    actionsContainer.appendChild(typeSelect);
+    actionsContainer.appendChild(deleteBtn);
 
-    // Ensamblar fila
-    const row = document.createElement('div');
-    row.className = 'flex items-center gap-2 justify-between w-full';
-    row.appendChild(info);
-    row.appendChild(typeSelect);
-    row.appendChild(deleteBtn);
-
-    option.appendChild(row);
+    option.appendChild(infoContainer);
+    option.appendChild(actionsContainer);
     dropdownList.appendChild(option);
   });
 
@@ -252,6 +247,7 @@ function renderCustomDropdown(characters, currentIgn) {
     }
   });
 }
+
 
 // 🎨 Aplica color según tipo seleccionado
 function applyTypeStyle(select, type) {
@@ -303,7 +299,4 @@ function updateCharacterType(ign, newType) {
 
   characters[ign].type = newType;
   localStorage.setItem('characters', JSON.stringify(characters));
-
-  // Opcional: recargar para aplicar estilos de color si lo usas
-  loadSkills?.();
 }
