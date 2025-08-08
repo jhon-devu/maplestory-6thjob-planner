@@ -1,12 +1,11 @@
 // ✅ Manejo del botón de ingresar MapleRanks
 async function handleMapleranksLink() {
-  const url = document.getElementById('mapleranksUrl').value.trim();
-  if (!url.includes('/u/')) {
-    alert('Please enter a valid MapleRanks URL');
+  const ign = document.getElementById('mapleranksUrl').value.trim();
+  if (!ign) {
+    showToast("⚠️ Please enter your IGN", "#F59E0B");
     return;
   }
 
-  const ign = url.split('/u/')[1];
   localStorage.setItem('ms_tracker_ign', ign);
   localStorage.setItem('ms_tracker_source', 'mapleranks');
 
@@ -16,7 +15,8 @@ async function handleMapleranksLink() {
     saveCharacterData(ign, data);
     window.location.href = 'dashboard.html';
   } else {
-    alert('Could not fetch valid data from MapleRanks.');
+    showToast("❌ Character not found on mapleranks or banned.", "#DC2626");
+    return;
   }
 }
 
@@ -53,21 +53,31 @@ async function fetchMapleranksData(ign) {
   return data;
 }
 
-// ✅ Manejo del formulario manual
 function handleManualEntry() {
   const name = document.getElementById('manualName').value.trim();
   const className = document.getElementById('manualClass').value;
+
   if (!name || !className) {
-    alert('Please complete both fields.');
+    showToast("⚠️ Please complete both fields.", "#F59E0B");
     return;
   }
 
+
+  const gifOptions = [
+    'https://media.tenor.com/Bw6szS08q3gAAAAC/maplestory.gif',
+    'https://media.tenor.com/GAPrwr7XxI4AAAAC/maplestory-slime.gif',
+    'https://media.tenor.com/O_fCzCyEwZ8AAAAd/maplestory.gif',
+    'https://media.tenor.com/RtTjv4j_q9wAAAAC/maplestory-attack.gif'
+  ];
+
+  const randomGif = gifOptions[Math.floor(Math.random() * gifOptions.length)];
+
   const data = {
     class: className,
-    world: '?',
+    world: 'Manual Entry',
     level: '?',
     progress: '?',
-    sprite: ''
+    sprite: randomGif,
   };
 
   localStorage.setItem('ms_tracker_ign', name);
@@ -75,4 +85,48 @@ function handleManualEntry() {
 
   saveCharacterData(name, data);
   window.location.href = 'dashboard.html';
+}
+
+
+function showToast(message, bgColor = "#374151") {
+  Toastify({
+    text: message,
+    duration: 4000,
+    gravity: "top",
+    position: "right",
+    backgroundColor: bgColor,
+    stopOnFocus: true
+  }).showToast();
+}
+
+
+function showConfirm(message) {
+  return new Promise((resolve) => {
+    const modal = document.getElementById("confirmModal");
+    const messageEl = document.getElementById("confirmMessage");
+    const yesBtn = document.getElementById("confirmYes");
+    const noBtn = document.getElementById("confirmNo");
+
+    messageEl.textContent = message;
+    modal.classList.remove("hidden");
+
+    const cleanup = () => {
+      modal.classList.add("hidden");
+      yesBtn.removeEventListener("click", onYes);
+      noBtn.removeEventListener("click", onNo);
+    };
+
+    const onYes = () => {
+      cleanup();
+      resolve(true);
+    };
+
+    const onNo = () => {
+      cleanup();
+      resolve(false);
+    };
+
+    yesBtn.addEventListener("click", onYes);
+    noBtn.addEventListener("click", onNo);
+  });
 }

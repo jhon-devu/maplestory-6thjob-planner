@@ -1,48 +1,2039 @@
 {
-  "Adele": [
-    {
-      "name": "Tethered Unity",
-      "maxLevel": 30,
-      "fragmentCostPerLevel": 1,
-      "energyCostPerLevel": 100
-    },
-    {
-      "name": "Blade Symphony",
-      "maxLevel": 20,
-      "fragmentCostPerLevel": 2,
-      "energyCostPerLevel": 150
-    }
-  ],
-  "Ark": [
-    {
-      "name": "Unbound Will",
-      "maxLevel": 30,
-      "fragmentCostPerLevel": 1,
-      "energyCostPerLevel": 100
-    }
-  ],
-  "Wind Archer": [
-    {
-      "name": "Wind Walk",
-      "maxLevel": 30,
-      "fragmentCostPerLevel": 1,
-      "energyCostPerLevel": 100
-    }
-  ],
-  "Kanna": [  
-    {
-      "name": "Kishin Shoukan",
-      "maxLevel": 30,
-      "fragmentCostPerLevel": 1,
-      "energyCostPerLevel": 100
-    }
-  ],
-  "Kinesis": [  
-    {
-      "name": "Psychic Force",
-      "maxLevel": 30,
-      "fragmentCostPerLevel": 1,
-      "energyCostPerLevel": 100
-    }
-  ]
+  "Hero": {
+    "classroot": "explorers",
+    "skills": [
+      {
+        "name": "Spirit Caliber",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Raging Blow VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Sword of Burning Soul Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Combo Instinct Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Combo Death Fault Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Sword Illusion Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Paladin": {
+    "classroot": "explorers",
+    "skills": [
+      {
+        "name": "Sacred Bastion",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Blast VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Divine Judgement VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Holy Unity Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Blessed Hammer Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Grand Cross Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Mighty Mjolnir Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Dark Knight": {
+    "classroot": "explorers",
+    "skills": [
+      {
+        "name": "Dead Space",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Gungnir Descent VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Dark Spear Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Beholder Impact Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Pierce Cyclone Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Darkness Aura Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Archmage (F/P)": {
+    "classroot": "explorers",
+    "skills": [
+      {
+        "name": "Infernal Venom",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Flame Sweep VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "DoT Punisher Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Poison Nova Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Fury of Ifrit Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Poison Chain Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Ice Lightning Archmage": {
+    "classroot": "explorers",
+    "skills": [
+      {
+        "name": "Frozen Lightning",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Chain Lightning VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Ice Age Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Thunder Break Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Spirit of Snow Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Jupiter Thunder Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Bishop": {
+    "classroot": "explorers",
+    "skills": [
+      {
+        "name": "Holy Advent",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Angel Ray VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Pray Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Angels of Libra Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Peacemaker Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Divine Punishment Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Bowmaster": {
+    "classroot": "explorers",
+    "skills": [
+      {
+        "name": "Ascendant Shade",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Hurricane VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Arrow Rain Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Afterimage Shot Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Quiver Full Burst Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Silhouette Mirage Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Marksman": {
+    "classroot": "explorers",
+    "skills": [
+      {
+        "name": "Final Aim",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Sniping VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "True Sniping Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Split Arrow Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Charged Arrow Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Repeating Crossbow Cartridge Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Pathfinder": {
+    "classroot": "explorers",
+    "skills": [
+      {
+        "name": "Forsaken Relic",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Cardinal Blast VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Additional Blast VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Ultimate Blast Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Raven/Evolve Tempest Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Obsidian Barrier Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Relic Unbound Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Night Lord": {
+    "classroot": "explorers",
+    "skills": [
+      {
+        "name": "Arbiter of Life and Death",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Quadruple Throw VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Spread Throw Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Fuma Shuriken Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Dark Lord\u2019s Secret Scroll Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Throw Blasting Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Shadower": {
+    "classroot": "explorers",
+    "skills": [
+      {
+        "name": "Resolute Strike",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Assassinate VI / Pulverize VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Shadow Assault Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Eviscerate Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Sonic Blow Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Demon Slashing Shadow Formation Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Dual Blade": {
+    "classroot": "explorers",
+    "skills": [
+      {
+        "name": "Karma Blade",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Phantom Blow VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Blade Storm Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Karma Fury Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Blade Tornado Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Haunted Edge Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Buccaneer": {
+    "classroot": "explorers",
+    "skills": [
+      {
+        "name": "Liberate Neptunus",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Fist Enrage VI / Super Fist Enrage",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Lightning Form Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Serpent Screw Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Furious Charge Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Howling Fist Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Captain": {
+    "classroot": "explorers",
+    "skills": [
+      {
+        "name": "Dreadnought",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Rapid Fire VI / Wild Fire Mode",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Bullet Party Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Deadeye Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Nautilus Assault Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Death Trigger Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Cannon Shooter": {
+    "classroot": "explorers",
+    "skills": [
+      {
+        "name": "Super Cannon Explosion",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Cannon Buster VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Big Huge Gigantic Cannonball Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "ICBM Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Special Monkey Escort Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Pool Maker Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Mihile": {
+    "classroot": "cygnus",
+    "skills": [
+      {
+        "name": "Durandal",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Shining Cross VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Rho Aias Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Claiomh Solais Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Sword of Soul Light Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Light of Courage Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Dawn Warrior": {
+    "classroot": "cygnus",
+    "skills": [
+      {
+        "name": "Astral Blitz",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Solar Slash VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Lunar Divide VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Cosmos Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Elysion Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Soul Eclipse Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Flare Slash Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Blaze Wizard": {
+    "classroot": "cygnus",
+    "skills": [
+      {
+        "name": "Eternity",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Orbital Flame VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Blazing Orbital Flame Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Flame Discharge Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Infinity Flame Circle Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Salamander Mischief Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Wind Archer": {
+    "classroot": "cygnus",
+    "skills": [
+      {
+        "name": "Mistral Spring",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Song of Heaven VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Howling Gale Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Idle Whim Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Wind Wall Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Vortex Sphere Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Night Walker": {
+    "classroot": "cygnus",
+    "skills": [
+      {
+        "name": "Silence",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Quintuple Throw VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Shadow Spear Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Shadow Servant Extend Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Shadow Bite Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Rapid Throw Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Thunder Breaker": {
+    "classroot": "cygnus",
+    "skills": [
+      {
+        "name": "Thunderstorm Sea Wave",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Annihilate VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Lightning Cascade Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Shark Torpedo Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Lightning God Spear Strike Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Lightning Spear Multistrike Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Aran": {
+    "classroot": "heroes",
+    "skills": [
+      {
+        "name": "Adrenaline Surge",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Howling Swing",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Beyonder VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Install Maha Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Brandish Maha Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Fenrir Crash Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Blizzard Tempest Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Evan": {
+    "classroot": "heroes",
+    "skills": [
+      {
+        "name": "Zodiac Burst",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Circle of Mana VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Elemental Blast Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Dragon Break Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Zodiac Ray Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Spiral of Mana Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Luminous": {
+    "classroot": "heroes",
+    "skills": [
+      {
+        "name": "Harmonic Paradox",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Absolute Kill VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Door of Truth Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Punishing Resonator Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Baptism of Light and Darkness Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Liberation Orb Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Mercedes": {
+    "classroot": "heroes",
+    "skills": [
+      {
+        "name": "Unfading Glory",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Ishtar’s Ring VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Elemental Ghost Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Sylphidia Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Irkalla’s Breath Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Royal Knights Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Phantom": {
+    "classroot": "heroes",
+    "skills": [
+      {
+        "name": "Defying Fate",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Tempest of Cards VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Joker Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Blackjack Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Mark of Phantom Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Rift Break Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Shade": {
+    "classroot": "heroes",
+    "skills": [
+      {
+        "name": "Advent of the Fox God",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Spirit Claw VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Spirit Flow Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Spirit Gate Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "True Spirit Claw Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Smashing Multipunch Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Blaster": {
+    "classroot": "resistance",
+    "skills": [
+      {
+        "name": "Final Destroyer",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Magnum Punch VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Double Fang VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Bunker Buster Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Vulcan Punch Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Burning Breaker Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Afterimage Shock Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Battle Mage": {
+    "classroot": "resistance",
+    "skills": [
+      {
+        "name": "Crimson Pactum",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Death VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Union Aura Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Black Magic Altar Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Grim Reaper Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Abyssal Lightning Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Wild Hunter": {
+    "classroot": "resistance",
+    "skills": [
+      {
+        "name": "Nature’s Belief",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Wild Vulcan VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Jaguar Storm Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Jaguar Maximum Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Wild Grenade Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Wild Vulcan Type X Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Xenon": {
+    "classroot": "resistance",
+    "skills": [
+      {
+        "name": "Artificial Evolution",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Fuzzy Lob Masquerade VI: Snipe",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Fuzzy Lob Masquerade VI: Bombard",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Mega Smasher Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Overload Mode Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Hologram Gravity: Fusion Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Photon Ray Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Mechanic": {
+    "classroot": "resistance",
+    "skills": [
+      {
+        "name": "Ground Zero",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Massive Fire: SPLASH-F VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Massive Fire: IRON-B VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Multiple Options: M-FL Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Micro Missile Container Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Metal Armor Full Burst Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Mecha Carrier Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Demon Slayer": {
+    "classroot": "resistance",
+    "skills": [
+      {
+        "name": "Nightmare",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Demon Impact VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Demon Awakening Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Jormungandr Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Orthrus Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Demon Bane Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Demon Avenger": {
+    "classroot": "resistance",
+    "skills": [
+      {
+        "name": "Requiem",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Shield Chasing VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Demon Frenzy Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Blood Feast Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Dimension Sword Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Revenant Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Kaiser": {
+    "classroot": "nova",
+    "skills": [
+      {
+        "name": "Might of Nova",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Giga Slasher VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Guardian of Nova Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Will of Swords: Strike Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Draco Slasher Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Dragon Blaze Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Kain": {
+    "classroot": "nova",
+    "skills": [
+      {
+        "name": "Annihilation",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Falling Dust VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "[Possess] Falling Dust VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "[Execute] Poison Needle VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Dragon Burst Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Fatal Blitz Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Thanatos Descent Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Grip of Agony Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Cadena": {
+    "classroot": "nova",
+    "skills": [
+      {
+        "name": "Chain Arts: Massacre",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Chain Arts: Stroke VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Chain Arts: Fury Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "A.D Ordnance Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Chain Arts: Maelstrom Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Weapon Variety Finale Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Angelic Buster": {
+    "classroot": "nova",
+    "skills": [
+      {
+        "name": "Grand Finale",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Trinity VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Energy Burst Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Spotlight Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Mascot Familiar Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Trinity Fusion Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Zero": {
+    "classroot": "special",
+    "skills": [
+      {
+        "name": "Chrono Trigger",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Giga Crash VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Jumping Crash VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Earth Break VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Wind Cutter VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Wind Strike VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Storm Break VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Time Piece",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Limit Break Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Joint Attack Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Shadow Flash Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Ego Weapon Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Kinesis": {
+    "classroot": "special",
+    "skills": [
+      {
+        "name": "Another Realm",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Ultimate – Material VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Psychic Tornado Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Ultimate – Moving Matter Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Ultimate – Psychic Bullet Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Law of Gravity Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Adele": {
+    "classroot": "flora",
+    "skills": [
+      {
+        "name": "Maestro",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Divide VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Shard VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Wonder VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Ruin Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Infinite Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Restore Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Storm Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Illium": {
+    "classroot": "flora",
+    "skills": [
+      {
+        "name": "Unlimited Crystals",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Craft: Javelin VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Glory Wings: Javelin VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Crystal Ignition Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Gram Holder Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Soul of Crystal Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Crystal Gate Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Khali": {
+    "classroot": "flora",
+    "skills": [
+      {
+        "name": "Hex: Sandstorm",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Arts: Flurry VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Arts: Crescentum VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Hex: Pandemonium Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Void Burst Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Arts: Astra Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Resonate: Ultimatum Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Ark": {
+    "classroot": "flora",
+    "skills": [
+      {
+        "name": "Ancient Abyss",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Plain Charge Drive VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Scarlet Charge Drive VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Gust Charge Drive VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Abyss Charge Drive VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Awakened Abyss",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Abyssal Recall Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Infinity Spell Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Devious Nightmare/Devious Dream Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Endlessly Starving Beast Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  },
+  "Hoyoung": {
+    "classroot": "flora",
+    "skills": [
+      {
+        "name": "Blooming Flower World",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Essence Sprinkle VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Big Stretch Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Sun River Mountain Wind Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Surging Essence Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Winding Mountain Ridge Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Sage: Formation of Heaven and Earth",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Heaven: Consuming Flames VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Earth: Stone Tremor VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Humanity: Gold-Banded Cudgel VI",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Wonders of Heaven and Earth",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Sage: Maximum Clone Rampage Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Scroll: Tiger of Songyu Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Sage: Wrath of Gods Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      },
+      {
+        "name": "Sage: Three Paths Apparition Enhancement",
+        "maxLevel": 30,
+        "fragmentCostPerLevel": 1,
+        "energyCostPerLevel": 100
+      }
+    ]
+  }
 }
