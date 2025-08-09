@@ -14,13 +14,7 @@ function saveCharacterData(ign, data) {
   localStorage.setItem('currentCharacter', ign);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const savedOptions = document.getElementById('savedOptions');
-  const characters = localStorage.getItem('characters');
-  if (characters) {
-    savedOptions.classList.remove('hidden');
-  }
-});
+
 
 // Continuar con datos guardados
 function continueWithSavedData() {
@@ -36,7 +30,8 @@ function continueWithSavedData() {
 
 // Limpiar datos guardados
 function clearSavedData() {
-  if (confirm('Are you sure you want to clear all saved data?')) {
+ if (showToast("⚠️ Are you sure you want to clear all saved data?", "#ee0b0bff")) {
+
     localStorage.removeItem('characters');
     localStorage.removeItem('currentCharacter');
     localStorage.removeItem('ms_tracker_ign');

@@ -2,116 +2,320 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>6th Job Skill Tracker</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <style>
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0)
+      }
+
+      50% {
+        transform: translateY(-2px)
+      }
+    }
+
+    .animate-float {
+      animation: float 1.8s ease-in-out infinite;
+    }
+  </style>
 </head>
-<!-- ✅ Home btn -->
 
-<body class="bg-gray-900 text-white font-sans min-h-screen p-6"></body>
-<div class="fixed top-4 right-4 z-50">
-  <button onclick="goHome()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded shadow-lg">
-    ⬅️ Home
-  </button>
-</div>
-<!-- 🧍 Información del personaje activo -->
-<div class="mb-6 flex items-center gap-4">
-  <img id="charSprite" class="w-16 h-16 rounded shadow" />
-  <div>
-    <p class="text-lg font-semibold">
-      <span id="charName"></span> (<span id="charClass"></span>)
-    </p>
-    <p id="charMeta" class="text-sm text-gray-400">
-      Lv. <span id="charLevel">?</span> (<span id="charProgress">?</span>%) – <span id="charWorld">?</span>
-    </p>
 
+<body class="bg-gray-900 text-white font-sans min-h-screen flex flex-col">
+
+  <!-- 🔝 Home btn -->
+  <div class="fixed top-4 right-4 z-50">
+    <button onclick="goHome()"
+      class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded shadow-lg">
+      ⬅️ Home
+    </button>
   </div>
-</div>
 
-<!-- 🔽 Dropdown personalizado + botones -->
-<div class="mt-3 flex flex-col md:flex-row items-start md:items-center gap-4">
+  <!-- ⭐ Contenido -->
+  <main class="flex-1 p-6 pb-24">
+    <!-- 🧍 Información del personaje activo -->
+    <div class="mb-6 flex items-center gap-4">
+      <img id="charSprite" class="w-16 h-16 rounded shadow" />
+      <div>
+        <p class="text-lg font-semibold">
+          <span id="charName"></span> (<span id="charClass"></span>)
+        </p>
+        <p id="charMeta" class="text-sm text-gray-400">
+          Lv. <span id="charLevel">?</span> (<span id="charProgress">?</span>%) – <span id="charWorld">?</span>
+        </p>
+      </div>
+    </div>
 
-  <!-- 🔽 Dropdown personalizado -->
-  <div class="relative w-64">
+    <!-- Label global -->
     <label class="block text-sm text-gray-300 mb-1">Select Character:</label>
 
-    <!-- Botón principal que muestra el seleccionado -->
-    <button id="dropdownButton"
-      class="w-full bg-gray-800 border border-gray-600 px-4 py-2 rounded text-left flex justify-between items-center">
-      <span id="dropdownSelected">Select Character</span>
-      <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-      </svg>
-    </button>
+    <!-- 🔽 Dropdown + botones -->
+    <div class="flex flex-wrap items-center gap-3">
+      <!-- Dropdown -->
+      <div class="relative w-full sm:w-[360px]">
+        <button id="dropdownButton"
+          class="h-10 w-full inline-flex items-center justify-between bg-gray-800 border border-gray-600 px-4 rounded text-left">
+          <span id="dropdownSelected" class="truncate">Select Character</span>
+          <svg class="w-4 h-4 opacity-80" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M5.5 7.5l4.5 4.5 4.5-4.5" />
+          </svg>
+        </button>
 
-    <!-- Lista desplegable (opciones se cargan con JS) -->
-    <div id="dropdownList"
-      class="absolute z-10 mt-1 w-full bg-gray-800 border border-gray-600 rounded shadow-lg hidden max-h-60 overflow-y-auto">
-      <!-- Aquí se insertan dinámicamente los personajes -->
+        <div id="dropdownList"
+          class="absolute z-10 mt-1 w-full bg-gray-800 border border-gray-600 rounded shadow-lg hidden max-h-60 overflow-y-auto">
+          <!-- opciones dinámicas -->
+        </div>
+      </div>
+
+      <!-- Botones -->
+      <div class="flex items-center gap-2 shrink-0">
+        <button onclick="deleteCurrentCharacter()"
+          class="inline-flex items-center justify-center h-10 px-3 whitespace-nowrap leading-none bg-red-600 hover:bg-red-700 text-white text-sm font-medium rounded">
+          <span class="text-base leading-none translate-y-[1px]">🗑️</span>
+          <span class="ml-2">Delete</span>
+        </button>
+
+        <button onclick="openAddCharacterModal()"
+          class="inline-flex items-center justify-center h-10 px-3 whitespace-nowrap leading-none bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded">
+          <span class="text-base leading-none translate-y-[1px]">➕</span>
+          <span class="ml-2">Add New</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Panel de Stats -->
+    <div id="statsPanel" class="flex items-center gap-3 bg-gray-800/60 border border-gray-700 rounded px-3 py-2 mt-3">
+
+
+      <div class="flex items-center gap-2">
+
+        <label for="cpInput" class="text-sm text-gray-300">Combat Power</label>
+        <input id="cpInput" type="number" inputmode="numeric"
+          class="px-2 py-1 rounded bg-gray-900 border border-gray-700 text-gray-100 w-28" placeholder="0">
+      </div>
+
+      <div class="h-5 w-px bg-gray-700"></div>
+
+      <div class="flex items-center gap-2">
+        <span class="text-sm text-gray-300">Total Fragments</span>
+        <span id="totalFragments" class="text-sm font-semibold text-emerald-400">0</span>
+        <button id="recalcFragmentsBtn" class="text-xs underline text-gray-400 hover:text-gray-200">recalc</button>
+      </div>
+    </div>
+    <!-- 🔖 Sección: 6th Job Tracker -->
+    <h2 class="mt-8 mb-3 text-xl font-semibold tracking-wide text-gray-200 flex items-center gap-2">
+      <span class="inline-block w-2 h-2 rounded-full bg-indigo-400"></span>
+      6th Job Tracker
+    </h2>
+    <!-- 📋 Tabla de habilidades -->
+    <div id="skillsContainer" class="overflow-x-auto mt-6">
+      <table class="table-auto w-full text-left border-collapse">
+        <thead>
+          <tr class="bg-gray-800">
+            <th class="px-4 py-2">Skill</th>
+            <th class="px-4 py-2">Current Level</th>
+            <th class="px-4 py-2">Max Level</th>
+            <th class="px-4 py-2">Fragments Needed</th>
+            <th class="px-4 py-2">Energy Needed</th>
+          </tr>
+        </thead>
+        <tbody id="skillsTable" class="bg-gray-700">
+          <!-- Skills will be injected here -->
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-sm text-gray-400 mt-3">
+      <span id="charType"></span>
+    </p>
+    <!-- 🔖 Sección: Symbols Progress -->
+    <h2 class="mt-10 mb-2 text-lg font-semibold tracking-wide text-gray-200 flex items-center gap-2">
+      <span class="inline-block w-2 h-2 rounded-full bg-rose-400"></span>
+      Symbols Progress
+    </h2>
+
+    <!-- Arcane River -->
+    <h3 class="mb-1 text-sm font-medium text-gray-300">Arcane River</h3>
+    <div id="arcaneGrid" class="grid grid-cols-3 sm:grid-cols-6 gap-2"></div>
+    <!-- Nuevo: dailies y weeklies -->
+    <label class="block mt-2">
+      <span class="text-sm text-gray-300">Daily symbols (por día)</span>
+      <input id="modalDailyGain" type="number" min="0" value="8"
+        class="mt-1 w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-gray-100" />
+    </label>
+
+    <label class="mt-2 flex items-center gap-2 select-none">
+      <input id="modalUseWeeklies" type="checkbox" class="h-4 w-4">
+      <span class="text-sm text-gray-300">Incluir weeklies (+120/semana)</span>
+    </label>
+
+    <!-- Sacred / Grandis -->
+    <h3 class="mt-4 mb-1 text-sm font-medium text-gray-300">Sacred Symbols</h3>
+    <div id="sacredGrid" class="grid grid-cols-3 sm:grid-cols-6 gap-2"></div>
+
+
+
+    <!-- ⚙️ Modal para editar nivel/params -->
+    <div id="symbolModal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
+      <div class="bg-gray-800 border border-gray-700 rounded-xl p-5 w-full max-w-md">
+        <h3 id="modalTitle" class="text-lg font-semibold text-gray-100 mb-4">Edit Symbol</h3>
+
+        <div class="space-y-3">
+          <label class="block">
+            <span class="text-sm text-gray-300">Current Level</span>
+            <input id="modalCurrentLevel" type="number" min="1"
+              class="mt-1 w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-gray-100" />
+          </label>
+
+          <!-- Opcionales para el cálculo (puedes ocultarlos si no los quieres ahora) -->
+          <label class="block">
+            <span class="text-sm text-gray-300">Max Level</span>
+            <input id="modalMaxLevel" type="number" min="1"
+              class="mt-1 w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-gray-100" />
+          </label>
+
+          <label class="block">
+            <span class="text-sm text-gray-300">Avg. days per level</span>
+            <input id="modalDaysPerLevel" type="number" min="1"
+              class="mt-1 w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-gray-100" />
+          </label>
+        </div>
+
+        <div class="mt-5 flex justify-end gap-2">
+          <button id="btnCancelModal"
+            class="px-4 py-2 rounded bg-gray-700 hover:bg-gray-600 text-gray-100">Cancel</button>
+          <button id="btnSaveModal" class="px-4 py-2 rounded bg-indigo-600 hover:bg-indigo-500 text-white">Save</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+  <!-- 🧊 Confirm Modal -->
+  <div id="confirmModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+    <div class="bg-gray-800 text-white p-6 rounded shadow-lg w-full max-w-sm">
+      <p id="confirmMessage" class="mb-4 text-center"></p>
+      <div class="flex justify-around">
+        <button id="confirmYes" class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded">Yes</button>
+        <button id="confirmNo" class="bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded">Cancel</button>
+      </div>
     </div>
   </div>
 
-  <!-- 🔘 Botones -->
-  <div class="flex gap-2">
-    <button onclick="deleteCurrentCharacter()" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded">🗑️
-      Delete</button>
-    <button onclick="goToAddCharacter()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">➕ Add
-      New</button>
-  </div>
-</div>
+  <!-- 🆕 Modal: Add Character -->
+  <div id="addCharModal" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden z-50">
+    <div class="bg-gray-800 text-white w-full max-w-md rounded-xl shadow-xl p-6 relative">
+      <button class="absolute top-2 right-3 text-gray-400 hover:text-gray-200 text-xl"
+        onclick="closeAddCharacterModal()">✕</button>
+      <h3 class="text-lg font-semibold mb-4">Add New Character</h3>
 
-<!-- 📋 Tabla de habilidades -->
-<div id="skillsContainer" class="overflow-x-auto mt-6">
-  <table class="table-auto w-full text-left border-collapse">
-    <thead>
-      <tr class="bg-gray-800">
-        <th class="px-4 py-2">Skill</th>
-        <th class="px-4 py-2">Current Level</th>
-        <th class="px-4 py-2">Max Level</th>
-        <th class="px-4 py-2">Fragments Needed</th>
-        <th class="px-4 py-2">Energy Needed</th>
-      </tr>
-    </thead>
-    <tbody id="skillsTable" class="bg-gray-700">
-      <!-- Skills will be injected here -->
-    </tbody>
-  </table>
-</div>
-<p class="text-sm text-gray-400">
-  <span id="charType"></span>
-</p>
-<!-- Confirm Modal -->
-<div id="confirmModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
-  <div class="bg-gray-800 text-white p-6 rounded shadow-lg w-full max-w-sm">
-    <p id="confirmMessage" class="mb-4 text-center"></p>
-    <div class="flex justify-around">
-      <button id="confirmYes" class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded">Yes</button>
-      <button id="confirmNo" class="bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded">Cancel</button>
+      <form id="addCharForm" class="space-y-5">
+        <!-- IGN + Buscar MapleRanks -->
+        <div>
+          <label class="block text-sm text-gray-300 mb-1">IGN (unique)*</label>
+          <div class="flex gap-2">
+            <input id="addIgn" name="ign" type="text" required
+              class="flex-1 bg-gray-900 border border-gray-700 rounded px-3 py-2 outline-none focus:border-blue-500"
+              placeholder="Ej: Jhon.Z" />
+            <button type="button" id="mapleRanksBtn" class="bg-blue-600 hover:bg-blue-500 px-3 rounded text-sm"
+              onclick="onMapleRanksSearch()">Buscar</button>
+          </div>
+          <p class="mt-1 text-xs text-gray-400">Usa “Buscar” para autocompletar desde MapleRanks (el <em>Type</em> lo
+            defines tú).</p>
+          <div id="mrStatus" class="mt-2 text-xs text-gray-300 hidden"></div>
+        </div>
+
+        <!-- Type -->
+        <div>
+          <label class="block text-sm text-gray-300 mb-1">Type*</label>
+          <select id="addType" name="type" required
+            class="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 outline-none focus:border-blue-500">
+            <option value="" disabled selected>Seleccionar...</option>
+            <option value="main">Main</option>
+            <option value="second">Second Main</option>
+            <option value="mule">Ctene Mule</option>
+            <option value="champion">Champion Mule</option>
+          </select>
+
+        </div>
+
+        <!-- Toggle entrada manual -->
+        <div class="flex items-center gap-2">
+          <input id="manualToggle" type="checkbox" class="h-4 w-4" onchange="toggleManualInputs(this.checked)">
+          <label for="manualToggle" class="text-sm text-gray-300">Entrada manual (clase, nivel, mundo)</label>
+        </div>
+
+        <!-- Campos manuales -->
+        <div id="manualFields" class="grid grid-cols-3 gap-3 hidden">
+          <div class="col-span-3">
+            <label class="block text-sm text-gray-300 mb-1">Class</label>
+            <input id="addClass" name="class" type="text"
+              class="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 outline-none focus:border-blue-500"
+              placeholder="Ej: Night Lord" />
+          </div>
+          <div>
+            <label class="block text-sm text-gray-300 mb-1">Level</label>
+            <input id="addLevel" name="level" type="number" min="1" max="300"
+              class="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 outline-none focus:border-blue-500"
+              placeholder="Ej: 260" />
+          </div>
+          <div>
+            <label class="block text-sm text-gray-300 mb-1">World</label>
+            <input id="addWorld" name="world" type="text"
+              class="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 outline-none focus:border-blue-500"
+              placeholder="Ej: Aurora" />
+          </div>
+          <div>
+            <label class="block text-sm text-gray-300 mb-1">Class (alt)</label>
+            <input id="addClassAlt" name="classAlt" type="text"
+              class="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 outline-none focus:border-blue-500"
+              placeholder="Opcional" />
+          </div>
+        </div>
+
+        <!-- Acciones -->
+        <div class="flex justify-end gap-3 pt-2">
+          <button type="button" onclick="closeAddCharacterModal()"
+            class="px-4 py-2 rounded bg-gray-700 hover:bg-gray-600">Cancel</button>
+          <button type="submit" class="px-4 py-2 rounded bg-green-600 hover:bg-green-500 font-semibold">Save</button>
+        </div>
+      </form>
     </div>
   </div>
-</div>
 
-<!-- footer -->
-<footer class="mt-10 text-center text-gray-400 text-sm py-6 border-t border-gray-700">
-  <p class="mb-4">Made with ❤️ by <strong class="text-white">Jhon.z</strong></p>
-  <div class="flex justify-center gap-4">
-    <button class="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 px-4 rounded transition duration-200">
-      Donate ❤️
-    </button>
-    <button
-      class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded transition duration-200">
-      Discord
-    </button>
-  </div>
-</footer>
+  <!-- 🔻 Footer fijo -->
+  <footer
+    class="fixed bottom-0 left-0 w-full bg-gray-900 text-gray-400 text-sm py-4 border-t border-gray-700 flex flex-col items-center">
+    <p class="mb-2 text-center">
+      Made with ❤️ by <strong class="text-white">Jhon.z</strong>
+    </p>
+    <div class="flex justify-center gap-4">
+      <button class="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 px-4 rounded transition duration-200">
+        Donate ❤️
+      </button>
+      <button
+        class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded transition duration-200">
+        Discord
+      </button>
+    </div>
+  </footer>
 
-<script src="home.js"></script>
-<script src="app.js"></script>
-<script src="dashboard.js"></script>
-<!-- Toastify CSS y JS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script defer src="home.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="dashboard.js"></script>
+  <script defer src="hexa-costs.js"></script>
+  <script type="module" src="dashboard.stats.js"></script>
+  <script defer src="symbols.js"></script>
 </body>
 
 </html>
