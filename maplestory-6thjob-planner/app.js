@@ -184,7 +184,12 @@ function toast(msg, type = 'info') {
     alert(msg);
   }
 }
-
+function normalizeName(name) {
+  return name
+    .trim()
+    .replace(/\s+/g, "_")        // espacios -> _
+    .replace(/[^a-zA-Z0-9_]/g, ""); // quitar caracteres raros
+}
 // ✅ Botón Buscar (MapleRanks)
 // ✅ Buscar en MapleRanks (no activa manual automáticamente)
 async function onMapleRanksSearch() {
@@ -207,14 +212,17 @@ async function onMapleRanksSearch() {
       return toast('No se encontró info en MapleRanks.', 'warn');
     }
 
-    // Rellenar campos, pero NO mostrar la sección manual ni marcar el toggle
-    if (data.class) document.getElementById('addClass').value = data.class;
+    // ✅ Normalizamos la clase ANTES de guardarla en el form
+    if (data.class) {
+      document.getElementById('addClass').value = normalizeName(data.class);
+    }
     if (data.world) document.getElementById('addWorld').value = data.world;
     if (data.level && !Number.isNaN(+data.level)) {
       document.getElementById('addLevel').value = parseInt(data.level, 10);
     } else {
       document.getElementById('addLevel').value = '';
     }
+
     // Guardar sprite/progress en dataset para el submit
     if (form) {
       form.dataset.sprite = data.sprite || '';

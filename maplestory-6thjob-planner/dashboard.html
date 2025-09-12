@@ -23,6 +23,38 @@
     .animate-float {
       animation: float 1.8s ease-in-out infinite;
     }
+
+    
+    #skillsTable th {
+      text-align: center;
+      /* centra texto y números */
+      vertical-align: middle;
+      /* centra verticalmente */
+    }
+
+    #skillsTable input[type="number"] {
+      text-align: center;
+      /* número centrado */
+      height: 32px;
+      /* altura fija para igualar celdas */
+      line-height: 1.2;
+      /* corrige alineación vertical */
+    }
+
+    #skillsTable input[type="number"] {
+      width: 60px;
+      /* ancho fijo */
+      padding: 4px 6px;
+      text-align: center;
+      height: 32px;
+      line-height: 1.2;
+      background-color: #1f2937;
+      /* mismo gris de la tabla */
+      border: 1px solid #374151;
+      /* borde gris */
+      border-radius: 4px;
+      color: white;
+    }
   </style>
 </head>
 
@@ -117,17 +149,20 @@
     <div id="skillsContainer" class="overflow-x-auto mt-6">
       <table class="table-auto w-full text-left border-collapse">
         <thead>
-          <tr class="bg-gray-800">
-            <th class="px-4 py-2">Skill</th>
-            <th class="px-4 py-2">Current Level</th>
-            <th class="px-4 py-2">Max Level</th>
-            <th class="px-4 py-2">Fragments Needed</th>
-            <th class="px-4 py-2">Energy Needed</th>
+          <tr class="bg-gray-800 text-gray-200">
+            <th class="px-4 py-3 text-left">Skill</th>
+            <th class="px-4 py-3 text-center">Current Lv</th>
+            <th class="px-4 py-3 text-center">Desired Lv</th>
+            <th class="px-4 py-3 text-center">Frags for Desired Lv</th>
+            <th class="px-4 py-3 text-center">Fragments Needed</th>
+            <th class="px-4 py-3 text-center">Energy Needed</th>
           </tr>
         </thead>
+
         <tbody id="skillsTable" class="bg-gray-700">
           <!-- Skills will be injected here -->
         </tbody>
+
       </table>
     </div>
 

@@ -1,2039 +1,2087 @@
 {
   "Hero": {
     "classroot": "explorers",
-    "skills": [
-      {
-        "name": "Spirit Caliber",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Raging Blow VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Sword of Burning Soul Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Combo Instinct Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Combo Death Fault Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Sword Illusion Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
-    ]
-  },
-  "Paladin": {
-    "classroot": "explorers",
-    "skills": [
-      {
-        "name": "Sacred Bastion",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Blast VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Divine Judgement VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Holy Unity Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Blessed Hammer Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Grand Cross Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Mighty Mjolnir Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Spirit Calibur",
+    "ascentSkill": "Silent Cleave",
+    "firstMastery": [
+      "HEXA Raging Blow"
+    ],
+    "secondMastery": [
+      "HEXA Rising Rage"
+    ],
+    "thirdMastery": [
+      "HEXA Beam Blade",
+      "Rending Edge"
+    ],
+    "fourthMastery": [
+      "HEXA Cry Valhalla",
+      "HEXA Puncture",
+      "HEXA Final Attack"
+    ],
+    "masterySkills": [
+      "HEXA Raging Blow",
+      "HEXA Rising Rage",
+      "HEXA Beam Blade",
+      "Rending Edge",
+      "HEXA Cry Valhalla",
+      "HEXA Puncture",
+      "HEXA Final Attack"
+    ],
+    "boostSkills": [
+      "Burning Soul Blade Boost",
+      "Instinctual Combo Boost",
+      "Worldreaver Boost",
+      "Sword Illusion Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
   "Dark Knight": {
     "classroot": "explorers",
-    "skills": [
-      {
-        "name": "Dead Space",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Gungnir Descent VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Dark Spear Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Beholder Impact Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Pierce Cyclone Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Darkness Aura Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Dead Space",
+    "ascentSkill": "Dark Halidom",
+    "firstMastery": [
+      "HEXA Gungnir's Descent"
+    ],
+    "secondMastery": [
+      "HEXA Dark Impale",
+      "HEXA Nightshade Explosion"
+    ],
+    "thirdMastery": [
+      "HEXA Revenge of the Evil Eye",
+      "HEXA Final Attack"
+    ],
+    "fourthMastery": [
+      "HEXA Evil Eye Shock"
+    ],
+    "masterySkills": [
+      "HEXA Gungnir's Descent",
+      "HEXA Dark Impale",
+      "HEXA Nightshade Explosion",
+      "HEXA Revenge of the Evil Eye",
+      "HEXA Final Attack",
+      "HEXA Evil Eye Shock"
+    ],
+    "boostSkills": [
+      "Spear of Darkness Boost",
+      "Radiant Evil Boost",
+      "Calamitous Cyclone Boost",
+      "Darkness Aura Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
-  "Archmage (F/P)": {
+  "Paladin": {
     "classroot": "explorers",
-    "skills": [
-      {
-        "name": "Infernal Venom",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Flame Sweep VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "DoT Punisher Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Poison Nova Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Fury of Ifrit Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Poison Chain Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Sacred Bastion",
+    "ascentSkill": "Dominus Obrion",
+    "firstMastery": [
+      "HEXA Blast"
+    ],
+    "secondMastery": [
+      "HEXA Divine Charge",
+      "HEXA Divine Mark"
+    ],
+    "thirdMastery": [
+      "HEXA Heaven's Hammer"
+    ],
+    "fourthMastery": [
+      "HEXA Final Attack",
+      "Rising Justice"
+    ],
+    "masterySkills": [
+      "HEXA Blast",
+      "HEXA Divine Charge",
+      "HEXA Divine Mark",
+      "HEXA Heaven's Hammer",
+      "HEXA Final Attack",
+      "Rising Justice"
+    ],
+    "boostSkills": [
+      "Divine Echo Boost",
+      "Hammers of the Righteous Boost",
+      "Grand Guardian Boost",
+      "Mighty Mjolnir Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
-  "Ice Lightning Archmage": {
-    "classroot": "explorers",
-    "skills": [
-      {
-        "name": "Frozen Lightning",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Chain Lightning VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Ice Age Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Thunder Break Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Spirit of Snow Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Jupiter Thunder Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+  "Arch Mage (Ice, Lightning)": {
+    "classroot": null,
+    "originSkill": "Frozen Lightning",
+    "ascentSkill": "Parabolic Bolt",
+    "firstMastery": [
+      "HEXA Chain Lightning"
+    ],
+    "secondMastery": [
+      "HEXA Frozen Orb",
+      "HEXA Blizzard"
+    ],
+    "thirdMastery": [
+      "HEXA Lightning Orb",
+      "Cryo Shock"
+    ],
+    "fourthMastery": [
+      "HEXA Thunder Sphere",
+      "HEXA Elquines"
+    ],
+    "masterySkills": [
+      "HEXA Chain Lightning",
+      "HEXA Frozen Orb",
+      "HEXA Blizzard",
+      "HEXA Lightning Orb",
+      "Cryo Shock",
+      "HEXA Thunder Sphere",
+      "HEXA Elquines"
+    ],
+    "boostSkills": [
+      "Ice Age Boost",
+      "Bolt Barrage Boost",
+      "Spirit of Snow Boost",
+      "Jupiter Thunder Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Arch Mage (Fire, Poison)": {
+    "classroot": null,
+    "originSkill": "Infernal Venom",
+    "ascentSkill": "Torrential Flame",
+    "firstMastery": [
+      "HEXA Flame Sweep"
+    ],
+    "secondMastery": [
+      "HEXA Flame Haze",
+      "HEXA Mist Eruption"
+    ],
+    "thirdMastery": [
+      "HEXA Ignite",
+      "HEXA Ifrit",
+      "HEXA Inferno Aura"
+    ],
+    "fourthMastery": [
+      "HEXA Creeping Toxin",
+      "HEXA Meteor Shower",
+      "HEXA Megiddo Flame"
+    ],
+    "masterySkills": [
+      "HEXA Flame Sweep",
+      "HEXA Flame Haze",
+      "HEXA Mist Eruption",
+      "HEXA Ignite",
+      "HEXA Ifrit",
+      "HEXA Inferno Aura",
+      "HEXA Creeping Toxin",
+      "HEXA Meteor Shower",
+      "HEXA Megiddo Flame"
+    ],
+    "boostSkills": [
+      "DoT Punisher Boost",
+      "Poison Nova Boost",
+      "Elemental Fury Boost",
+      "Poison Chain Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
   "Bishop": {
     "classroot": "explorers",
-    "skills": [
-      {
-        "name": "Holy Advent",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Angel Ray VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Pray Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Angels of Libra Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Peacemaker Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Divine Punishment Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
-    ]
-  },
-  "Bowmaster": {
-    "classroot": "explorers",
-    "skills": [
-      {
-        "name": "Ascendant Shade",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Hurricane VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Arrow Rain Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Afterimage Shot Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Quiver Full Burst Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Silhouette Mirage Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
-    ]
-  },
-  "Marksman": {
-    "classroot": "explorers",
-    "skills": [
-      {
-        "name": "Final Aim",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Sniping VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "True Sniping Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Split Arrow Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Charged Arrow Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Repeating Crossbow Cartridge Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Holy Advent",
+    "ascentSkill": "Command of Heaven",
+    "firstMastery": [
+      "HEXA Angel Ray"
+    ],
+    "secondMastery": [
+      "HEXA Big Bang",
+      "HEXA Triumphant Feather"
+    ],
+    "thirdMastery": [
+      "HEXA Angelic Wrath",
+      "HEXA Fountain of Vengeance",
+      "HEXA Bahamut"
+    ],
+    "fourthMastery": [
+      "HEXA Genesis",
+      "HEXA Heaven's Door"
+    ],
+    "masterySkills": [
+      "HEXA Angel Ray",
+      "HEXA Big Bang",
+      "HEXA Triumphant Feather",
+      "HEXA Angelic Wrath",
+      "HEXA Fountain of Vengeance",
+      "HEXA Bahamut",
+      "HEXA Genesis",
+      "HEXA Heaven's Door"
+    ],
+    "boostSkills": [
+      "Benediction Boost",
+      "Angel of Balance Boost",
+      "Peacemaker Boost",
+      "Divine Punishment Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
   "Pathfinder": {
     "classroot": "explorers",
-    "skills": [
-      {
-        "name": "Forsaken Relic",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Cardinal Blast VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Additional Blast VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Ultimate Blast Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Raven/Evolve Tempest Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Obsidian Barrier Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Relic Unbound Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Forsaken Relic",
+    "ascentSkill": "Relic Penetration",
+    "firstMastery": [
+      "HEXA Cardinal Burst"
+    ],
+    "secondMastery": [
+      "HEXA Cardinal Deluge",
+      "HEXA Bountiful Deluge"
+    ],
+    "thirdMastery": [
+      "HEXA Glyph of Impalement",
+      "HEXA Cardinal Torrent",
+      "HEXA Ancient Astra"
+    ],
+    "fourthMastery": [
+      "HEXA Combo Assault",
+      "HEXA Shadow Raven",
+      "Manifest Curse"
+    ],
+    "masterySkills": [
+      "HEXA Cardinal Burst",
+      "HEXA Cardinal Deluge",
+      "HEXA Bountiful Deluge",
+      "HEXA Glyph of Impalement",
+      "HEXA Cardinal Torrent",
+      "HEXA Ancient Astra",
+      "HEXA Combo Assault",
+      "HEXA Shadow Raven",
+      "Manifest Curse"
+    ],
+    "boostSkills": [
+      "Nova Blast Boost",
+      "Raven Tempest Boost",
+      "Obsidian Barrier Boost",
+      "Relic Unbound Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
-  "Night Lord": {
+  "Marksman": {
     "classroot": "explorers",
-    "skills": [
-      {
-        "name": "Arbiter of Life and Death",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Quadruple Throw VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Spread Throw Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Fuma Shuriken Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Dark Lord\u2019s Secret Scroll Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Throw Blasting Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Final Aim",
+    "ascentSkill": "Fatal Trigger",
+    "firstMastery": [
+      "HEXA Snipe"
+    ],
+    "secondMastery": [
+      "HEXA Piercing Arrow"
+    ],
+    "thirdMastery": [
+      "HEXA Frostprey",
+      "HEXA Bolt Burst"
+    ],
+    "fourthMastery": [
+      "HEXA Final Attack",
+      "HEXA High Speed Shot"
+    ],
+    "masterySkills": [
+      "HEXA Snipe",
+      "HEXA Piercing Arrow",
+      "HEXA Frostprey",
+      "HEXA Bolt Burst",
+      "HEXA Final Attack",
+      "HEXA High Speed Shot"
+    ],
+    "boostSkills": [
+      "Perfect Shot Boost",
+      "Split Shot Boost",
+      "Surge Bolt Boost",
+      "Repeating Crossbow Cartridge Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
-  "Shadower": {
+  "Bowmaster": {
     "classroot": "explorers",
-    "skills": [
-      {
-        "name": "Resolute Strike",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Assassinate VI / Pulverize VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Shadow Assault Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Eviscerate Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Sonic Blow Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Demon Slashing Shadow Formation Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Ascendant Shadow",
+    "ascentSkill": "Point Zero",
+    "firstMastery": [
+      "HEXA Hurricane"
+    ],
+    "secondMastery": [
+      "HEXA Arrow Stream",
+      "HEXA Arrow Blaster"
+    ],
+    "thirdMastery": [
+      "HEXA Quiver Cartridge",
+      "HEXA Phoenix",
+      "Extra Quiver Cartridge"
+    ],
+    "fourthMastery": [
+      "HEXA Speed Mirage",
+      "HEXA Gritty Gust"
+    ],
+    "masterySkills": [
+      "HEXA Hurricane",
+      "HEXA Arrow Stream",
+      "HEXA Arrow Blaster",
+      "HEXA Quiver Cartridge",
+      "HEXA Phoenix",
+      "Extra Quiver Cartridge",
+      "HEXA Speed Mirage",
+      "HEXA Gritty Gust"
+    ],
+    "boostSkills": [
+      "Storm of Arrows Boost",
+      "Inhuman Speed Boost",
+      "Quiver Barrage Boost",
+      "Silhouette Mirage Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
   "Dual Blade": {
     "classroot": "explorers",
-    "skills": [
-      {
-        "name": "Karma Blade",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Phantom Blow VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Blade Storm Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Karma Fury Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Blade Tornado Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Haunted Edge Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Karma Blade",
+    "ascentSkill": "Yamaz Decree",
+    "firstMastery": [
+      "HEXA Phantom Blow"
+    ],
+    "secondMastery": [
+      "HEXA Asura's Anger"
+    ],
+    "thirdMastery": [
+      "HEXA Blade Clone",
+      "Mortality"
+    ],
+    "fourthMastery": [
+      "HEXA Blade Fury",
+      "HEXA Sudden Raid"
+    ],
+    "masterySkills": [
+      "HEXA Phantom Blow",
+      "HEXA Asura's Anger",
+      "HEXA Blade Clone",
+      "Mortality",
+      "HEXA Blade Fury",
+      "HEXA Sudden Raid"
+    ],
+    "boostSkills": [
+      "Blade Storm Boost",
+      "Blades of Destiny Boost",
+      "Blade Tornado Boost",
+      "Haunted Edge Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Shadower": {
+    "classroot": "explorers",
+    "originSkill": "Halve Cut",
+    "ascentSkill": "Authentic Darkness",
+    "firstMastery": [
+      "HEXA Assassinate",
+      "HEXA Pulverize"
+    ],
+    "secondMastery": [
+      "HEXA Meso Explosion"
+    ],
+    "thirdMastery": [
+      "HEXA Dark Flare",
+      "HEXA Cruel Stab"
+    ],
+    "fourthMastery": [
+      "HEXA Sudden Raid",
+      "HEXA Shadow Veil",
+      "Covert Edge"
+    ],
+    "masterySkills": [
+      "HEXA Assassinate",
+      "HEXA Pulverize",
+      "HEXA Meso Explosion",
+      "HEXA Dark Flare",
+      "HEXA Cruel Stab",
+      "HEXA Sudden Raid",
+      "HEXA Shadow Veil",
+      "Covert Edge"
+    ],
+    "boostSkills": [
+      "Shadow Assault Boost",
+      "Trickblade Boost",
+      "Sonic Blow Boost",
+      "Slash Shadow Formation Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Night Lord": {
+    "classroot": "explorers",
+    "originSkill": "Life and Death",
+    "ascentSkill": "Crucial Assault",
+    "firstMastery": [
+      "HEXA Quad Star",
+      "Enhanced HEXA Quad Star"
+    ],
+    "secondMastery": [
+      "HEXA Assassin's Mark"
+    ],
+    "thirdMastery": [
+      "HEXA Dark Flare",
+      "HEXA Showdown",
+      "Darkness Shuriken"
+    ],
+    "fourthMastery": [
+      "HEXA Sudden Raid",
+      "HEXA Death Star"
+    ],
+    "masterySkills": [
+      "HEXA Quad Star",
+      "Enhanced HEXA Quad Star",
+      "HEXA Assassin's Mark",
+      "HEXA Dark Flare",
+      "HEXA Showdown",
+      "Darkness Shuriken",
+      "HEXA Sudden Raid",
+      "HEXA Death Star"
+    ],
+    "boostSkills": [
+      "Throwing Star Barrage Boost",
+      "Shurrikane Boost",
+      "Dark Lord's Omen Boost",
+      "Throw Blasting Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Cannoneer": {
+    "classroot": null,
+    "originSkill": "Super Cannon Explosion",
+    "ascentSkill": "Barrel of Monkeys",
+    "firstMastery": [
+      "HEXA Cannon Barrage"
+    ],
+    "secondMastery": [
+      "HEXA Cannon Bazooka",
+      "HEXA Monkey Mortar",
+      "HEXA Anchors Away",
+      "HEXA Nautilus Strike"
+    ],
+    "thirdMastery": [
+      "HEXA Rolling Rainbow"
+    ],
+    "fourthMastery": [
+      "HEXA Monkey Militia",
+      "HEXA Monkey Fury"
+    ],
+    "masterySkills": [
+      "HEXA Cannon Barrage",
+      "HEXA Cannon Bazooka",
+      "HEXA Monkey Mortar",
+      "HEXA Anchors Away",
+      "HEXA Nautilus Strike",
+      "HEXA Rolling Rainbow",
+      "HEXA Monkey Militia",
+      "HEXA Monkey Fury"
+    ],
+    "boostSkills": [
+      "Cannon of Mass Destruction Boost",
+      "The Nuclear Option Boost",
+      "Monkey Business Boost",
+      "Poolmaker Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
   "Buccaneer": {
     "classroot": "explorers",
-    "skills": [
-      {
-        "name": "Liberate Neptunus",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Fist Enrage VI / Super Fist Enrage",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Lightning Form Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Serpent Screw Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Furious Charge Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Howling Fist Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Unleash Neptunus",
+    "ascentSkill": "Haymaker",
+    "firstMastery": [
+      "HEXA Octopunch",
+      "Super Octopunch"
+    ],
+    "secondMastery": [
+      "HEXA Sea Serpent Burst",
+      "HEXA Sea Serpent's Rage",
+      "HEXA Nautilus Strike"
+    ],
+    "thirdMastery": [
+      "HEXA Serpent Scale"
+    ],
+    "fourthMastery": [
+      "HEXA Hook Bomber"
+    ],
+    "masterySkills": [
+      "HEXA Octopunch",
+      "Super Octopunch",
+      "HEXA Sea Serpent Burst",
+      "HEXA Sea Serpent's Rage",
+      "HEXA Nautilus Strike",
+      "HEXA Serpent Scale",
+      "HEXA Hook Bomber"
+    ],
+    "boostSkills": [
+      "Lightning Form Boost",
+      "Lord of the Deep Boost",
+      "Serpent Vortex Boost",
+      "Howling Fist Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
-  "Captain": {
-    "classroot": "explorers",
-    "skills": [
-      {
-        "name": "Dreadnought",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Rapid Fire VI / Wild Fire Mode",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Bullet Party Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Deadeye Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Nautilus Assault Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Death Trigger Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
-    ]
-  },
-  "Cannon Shooter": {
-    "classroot": "explorers",
-    "skills": [
-      {
-        "name": "Super Cannon Explosion",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Cannon Buster VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Big Huge Gigantic Cannonball Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "ICBM Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Special Monkey Escort Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Pool Maker Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
-    ]
-  },
-  "Mihile": {
-    "classroot": "cygnus",
-    "skills": [
-      {
-        "name": "Durandal",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Shining Cross VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Rho Aias Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Claiomh Solais Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Sword of Soul Light Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Light of Courage Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+  "Corsair": {
+    "classroot": null,
+    "originSkill": "The Dreadnought",
+    "ascentSkill": "Firecracker",
+    "firstMastery": [
+      "HEXA Rapid Fire"
+    ],
+    "secondMastery": [
+      "HEXA Broadside"
+    ],
+    "thirdMastery": [
+      "HEXA Brain Scrambler",
+      "HEXA Eight-Legs Easton",
+      "HEXA Firing Orders"
+    ],
+    "fourthMastery": [
+      "HEXA All Aboard",
+      "HEXA Siege Bomber",
+      "HEXA Ugly Bomb",
+      "HEXA Nautilus Strike"
+    ],
+    "masterySkills": [
+      "HEXA Rapid Fire",
+      "HEXA Broadside",
+      "HEXA Brain Scrambler",
+      "HEXA Eight-Legs Easton",
+      "HEXA Firing Orders",
+      "HEXA All Aboard",
+      "HEXA Siege Bomber",
+      "HEXA Ugly Bomb",
+      "HEXA Nautilus Strike"
+    ],
+    "boostSkills": [
+      "Bullet Barrage Boost",
+      "Target Lock Boost",
+      "Nautilus Assault Boost",
+      "Death Trigger Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
   "Dawn Warrior": {
     "classroot": "cygnus",
-    "skills": [
-      {
-        "name": "Astral Blitz",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Solar Slash VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Lunar Divide VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Cosmos Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Elysion Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Soul Eclipse Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Flare Slash Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
-    ]
-  },
-  "Blaze Wizard": {
-    "classroot": "cygnus",
-    "skills": [
-      {
-        "name": "Eternity",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Orbital Flame VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Blazing Orbital Flame Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Flame Discharge Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Infinity Flame Circle Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Salamander Mischief Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
-    ]
-  },
-  "Wind Archer": {
-    "classroot": "cygnus",
-    "skills": [
-      {
-        "name": "Mistral Spring",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Song of Heaven VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Howling Gale Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Idle Whim Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Wind Wall Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Vortex Sphere Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
-    ]
-  },
-  "Night Walker": {
-    "classroot": "cygnus",
-    "skills": [
-      {
-        "name": "Silence",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Quintuple Throw VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Shadow Spear Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Shadow Servant Extend Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Shadow Bite Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Rapid Throw Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Astral Blitz",
+    "ascentSkill": "Totality",
+    "firstMastery": [
+      "HEXA Luna Divide",
+      "HEXA Solar Slash"
+    ],
+    "secondMastery": [
+      "HEXA Cosmic Shower"
+    ],
+    "thirdMastery": [
+      "HEXA Cosmic Burst"
+    ],
+    "fourthMastery": [
+      "HEXA Equinox Slash",
+      "Equinox Power II"
+    ],
+    "masterySkills": [
+      "HEXA Luna Divide",
+      "HEXA Solar Slash",
+      "HEXA Cosmic Shower",
+      "HEXA Cosmic Burst",
+      "HEXA Equinox Slash",
+      "Equinox Power II"
+    ],
+    "boostSkills": [
+      "Cosmos Boost",
+      "Rift of Damnation Boost",
+      "Soul Eclipse Boost",
+      "Flare Slash Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
   "Thunder Breaker": {
     "classroot": "cygnus",
-    "skills": [
-      {
-        "name": "Thunderstorm Sea Wave",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Annihilate VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Lightning Cascade Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Shark Torpedo Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Lightning God Spear Strike Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Lightning Spear Multistrike Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Thunder Wall Sea Wave",
+    "ascentSkill": "Strong Wave Annihilation",
+    "firstMastery": [
+      "HEXA Annihilate"
+    ],
+    "secondMastery": [
+      "HEXA Thunderbolt"
+    ],
+    "thirdMastery": [
+      "HEXA Typhoon",
+      "HEXA Deep Rising"
+    ],
+    "fourthMastery": [
+      "HEXA Sea Wave",
+      "Deep Reinforcement"
+    ],
+    "masterySkills": [
+      "HEXA Annihilate",
+      "HEXA Thunderbolt",
+      "HEXA Typhoon",
+      "HEXA Deep Rising",
+      "HEXA Sea Wave",
+      "Deep Reinforcement"
+    ],
+    "boostSkills": [
+      "Lightning Cascade Boost",
+      "Shark Torpedo Boost",
+      "Lightning God Spear Strike Boost",
+      "Lightning Spear Multistrike Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
-  "Aran": {
-    "classroot": "heroes",
-    "skills": [
-      {
-        "name": "Adrenaline Surge",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Howling Swing",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Beyonder VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Install Maha Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Brandish Maha Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Fenrir Crash Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Blizzard Tempest Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+  "Night Walker": {
+    "classroot": "cygnus",
+    "originSkill": "Silence",
+    "ascentSkill": "Stygian Command",
+    "firstMastery": [
+      "HEXA Quintuple Star",
+      "HEXA Quintuple Star - Jet Black"
+    ],
+    "secondMastery": [
+      "HEXA Shadow Bat",
+      "HEXA Ravenous Bat"
+    ],
+    "thirdMastery": [
+      "HEXA Dark Omen"
+    ],
+    "fourthMastery": [
+      "HEXA Dominion",
+      "Abyssal Darkness"
+    ],
+    "masterySkills": [
+      "HEXA Quintuple Star",
+      "HEXA Quintuple Star - Jet Black",
+      "HEXA Shadow Bat",
+      "HEXA Ravenous Bat",
+      "HEXA Dark Omen",
+      "HEXA Dominion",
+      "Abyssal Darkness"
+    ],
+    "boostSkills": [
+      "Shadow Spear Boost",
+      "Greater Dark Servant Boost",
+      "Shadow Bite Boost",
+      "Rapid Throw Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
-  "Evan": {
-    "classroot": "heroes",
-    "skills": [
-      {
-        "name": "Zodiac Burst",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Circle of Mana VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Elemental Blast Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Dragon Break Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Zodiac Ray Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Spiral of Mana Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+  "Wind Archer": {
+    "classroot": "cygnus",
+    "originSkill": "Mistral Spring",
+    "ascentSkill": "Element Tempest",
+    "firstMastery": [
+      "HEXA Song of Heaven"
+    ],
+    "secondMastery": [
+      "HEXA Trifling Wind"
+    ],
+    "thirdMastery": [
+      "HEXA Storm Bringer",
+      "HEXA Fairy Spiral",
+      "HEXA Monsoon"
+    ],
+    "fourthMastery": [
+      "HEXA Storm Whim",
+      "Anemoi"
+    ],
+    "masterySkills": [
+      "HEXA Song of Heaven",
+      "HEXA Trifling Wind",
+      "HEXA Storm Bringer",
+      "HEXA Fairy Spiral",
+      "HEXA Monsoon",
+      "HEXA Storm Whim",
+      "Anemoi"
+    ],
+    "boostSkills": [
+      "Howling Gale Boost",
+      "Merciless Winds Boost",
+      "Gale Barrier Boost",
+      "Vortex Sphere Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
-  "Luminous": {
-    "classroot": "heroes",
-    "skills": [
-      {
-        "name": "Harmonic Paradox",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Absolute Kill VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Door of Truth Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Punishing Resonator Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Baptism of Light and Darkness Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Liberation Orb Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+  "Blaze Wizard": {
+    "classroot": "cygnus",
+    "originSkill": "Eternity",
+    "ascentSkill": "Flame Concerto",
+    "firstMastery": [
+      "HEXA Orbital Flame"
+    ],
+    "secondMastery": [
+      "HEXA Blazing Extinction"
+    ],
+    "thirdMastery": [
+      "HEXA Orbital Explosion",
+      "HEXA Phoenix Drive"
+    ],
+    "fourthMastery": [
+      "HEXA Towering Inferno"
+    ],
+    "masterySkills": [
+      "HEXA Orbital Flame",
+      "HEXA Blazing Extinction",
+      "HEXA Orbital Explosion",
+      "HEXA Phoenix Drive",
+      "HEXA Towering Inferno"
+    ],
+    "boostSkills": [
+      "Orbital Inferno Boost",
+      "Savage Flame Boost",
+      "Inferno Sphere Boost",
+      "Salamander Mischief Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Mihile": {
+    "classroot": "cygnus",
+    "originSkill": "Durendal",
+    "ascentSkill": "Knight Immortals",
+    "firstMastery": [
+      "HEXA Radiant Cross"
+    ],
+    "secondMastery": [
+      "HEXA Royal Guard"
+    ],
+    "thirdMastery": [
+      "HEXA Install Shield",
+      "HEXA Charging Light"
+    ],
+    "fourthMastery": [
+      "HEXA Offensive Defense",
+      "HEXA Final Attack",
+      "HEXA Soul Majesty"
+    ],
+    "masterySkills": [
+      "HEXA Radiant Cross",
+      "HEXA Royal Guard",
+      "HEXA Install Shield",
+      "HEXA Charging Light",
+      "HEXA Offensive Defense",
+      "HEXA Final Attack",
+      "HEXA Soul Majesty"
+    ],
+    "boostSkills": [
+      "Shield of Light Boost",
+      "Sword of Light Boost",
+      "Radiant Soul Boost",
+      "Light of Courage Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
   "Mercedes": {
     "classroot": "heroes",
-    "skills": [
-      {
-        "name": "Unfading Glory",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Ishtar’s Ring VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Elemental Ghost Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Sylphidia Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Irkalla’s Breath Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Royal Knights Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Unfading Glory",
+    "ascentSkill": "Elemental Spirit",
+    "firstMastery": [
+      "HEXA Ishtar's Ring"
+    ],
+    "secondMastery": [
+      "HEXA Wrath of Enlil",
+      "HEXA Spikes Royale",
+      "HEXA Leap Tornado"
+    ],
+    "thirdMastery": [
+      "HEXA Unicorn Spike",
+      "HEXA Gust Dive",
+      "HEXA Stunning Strikes"
+    ],
+    "fourthMastery": [
+      "HEXA Elemental Knights",
+      "HEXA Final Attack"
+    ],
+    "masterySkills": [
+      "HEXA Ishtar's Ring",
+      "HEXA Wrath of Enlil",
+      "HEXA Spikes Royale",
+      "HEXA Leap Tornado",
+      "HEXA Unicorn Spike",
+      "HEXA Gust Dive",
+      "HEXA Stunning Strikes",
+      "HEXA Elemental Knights",
+      "HEXA Final Attack"
+    ],
+    "boostSkills": [
+      "Spirit of Elluel Boost",
+      "Sylvidia's Flight Boost",
+      "Irkalla's Wrath Boost",
+      "Royal Knights Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Aran": {
+    "classroot": "heroes",
+    "originSkill": "Endgame",
+    "ascentSkill": "Frost Bluster",
+    "firstMastery": [
+      "HEXA Beyond Blade"
+    ],
+    "secondMastery": [
+      "HEXA Finisher - Hunter's Prey"
+    ],
+    "thirdMastery": [
+      "HEXA Last Stand"
+    ],
+    "fourthMastery": [
+      "HEXA Adrenaline Overload",
+      "HEXA Permafrost",
+      "HEXA Final Attack"
+    ],
+    "masterySkills": [
+      "HEXA Beyond Blade",
+      "HEXA Finisher - Hunter's Prey",
+      "HEXA Last Stand",
+      "HEXA Adrenaline Overload",
+      "HEXA Permafrost",
+      "HEXA Final Attack"
+    ],
+    "boostSkills": [
+      "Finisher - Adrenaline Surge Boost",
+      "Maha's Carnage Boost",
+      "Final Beyond Blade - White Tiger Boost",
+      "Blizzard Tempest Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
   "Phantom": {
     "classroot": "heroes",
-    "skills": [
-      {
-        "name": "Defying Fate",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Tempest of Cards VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Joker Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Blackjack Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Mark of Phantom Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Rift Break Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Defying Fate",
+    "ascentSkill": "Moonlight Serenade",
+    "firstMastery": [
+      "HEXA Tempest"
+    ],
+    "secondMastery": [
+      "HEXA Mille Aiguilles"
+    ],
+    "thirdMastery": [
+      "HEXA Carte Noir"
+    ],
+    "fourthMastery": [
+      "HEXA Carte Rose Finale",
+      "La Mort Carte"
+    ],
+    "masterySkills": [
+      "HEXA Tempest",
+      "HEXA Mille Aiguilles",
+      "HEXA Carte Noir",
+      "HEXA Carte Rose Finale",
+      "La Mort Carte"
+    ],
+    "boostSkills": [
+      "Luck of the Draw Boost",
+      "Ace in the Hole Boost",
+      "Phantom's Mark Boost",
+      "Rift Break Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Luminous": {
+    "classroot": "heroes",
+    "originSkill": "Harmonic Paradox",
+    "ascentSkill": "Lustrous Orb",
+    "firstMastery": [
+      "HEXA Ender"
+    ],
+    "secondMastery": [
+      "HEXA Reflection",
+      "Endless Darkness"
+    ],
+    "thirdMastery": [
+      "HEXA Apocalypse",
+      "Eternal Light"
+    ],
+    "fourthMastery": [
+      "HEXA Twilight Nova"
+    ],
+    "masterySkills": [
+      "HEXA Ender",
+      "HEXA Reflection",
+      "Endless Darkness",
+      "HEXA Apocalypse",
+      "Eternal Light",
+      "HEXA Twilight Nova"
+    ],
+    "boostSkills": [
+      "Gate of Light Boost",
+      "Aether Conduit Boost",
+      "Baptism of Light and Darkness Boost",
+      "Liberation Orb Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Evan": {
+    "classroot": "heroes",
+    "originSkill": "Zodiac Burst",
+    "ascentSkill": "Union Drive",
+    "firstMastery": [
+      "HEXA Mana Burst"
+    ],
+    "secondMastery": [
+      "HEXA Thunder Circle",
+      "HEXA Dragon Flash",
+      "HEXA Thunder Flash",
+      "HEXA Wind Flash"
+    ],
+    "thirdMastery": [
+      "HEXA Earth Circle",
+      "HEXA Dragon Dive",
+      "HEXA Earth Dive",
+      "HEXA Thunder Dive"
+    ],
+    "fourthMastery": [
+      "HEXA Wind Circle",
+      "HEXA Dragon Breath",
+      "HEXA Earth Breath",
+      "HEXA Wind Breath",
+      "HEXA Magic Debris",
+      "HEXA Dragon Spark"
+    ],
+    "masterySkills": [
+      "HEXA Mana Burst",
+      "HEXA Thunder Circle",
+      "HEXA Dragon Flash",
+      "HEXA Thunder Flash",
+      "HEXA Wind Flash",
+      "HEXA Earth Circle",
+      "HEXA Dragon Dive",
+      "HEXA Earth Dive",
+      "HEXA Thunder Dive",
+      "HEXA Wind Circle",
+      "HEXA Dragon Breath",
+      "HEXA Earth Breath",
+      "HEXA Wind Breath",
+      "HEXA Magic Debris",
+      "HEXA Dragon Spark"
+    ],
+    "boostSkills": [
+      "Elemental Barrage Boost",
+      "Dragon Slam Boost",
+      "Elemental Radiance Boost",
+      "Spiral of Mana Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
   "Shade": {
     "classroot": "heroes",
-    "skills": [
-      {
-        "name": "Advent of the Fox God",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Spirit Claw VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Spirit Flow Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Spirit Gate Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "True Spirit Claw Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Smashing Multipunch Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
-    ]
-  },
-  "Blaster": {
-    "classroot": "resistance",
-    "skills": [
-      {
-        "name": "Final Destroyer",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Magnum Punch VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Double Fang VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Bunker Buster Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Vulcan Punch Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Burning Breaker Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Afterimage Shock Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Advent of the Fox",
+    "ascentSkill": "Eternal Moon",
+    "firstMastery": [
+      "HEXA Spirit Claw"
+    ],
+    "secondMastery": [
+      "HEXA Fox Spirits"
+    ],
+    "thirdMastery": [
+      "HEXA Bomb Punch",
+      "HEXA Death Mark",
+      "Dusk Blow"
+    ],
+    "fourthMastery": [
+      "HEXA Spirit Frenzy"
+    ],
+    "masterySkills": [
+      "HEXA Spirit Claw",
+      "HEXA Fox Spirits",
+      "HEXA Bomb Punch",
+      "HEXA Death Mark",
+      "Dusk Blow",
+      "HEXA Spirit Frenzy"
+    ],
+    "boostSkills": [
+      "Fox God Flash",
+      "Spiritgate Boost",
+      "True Spirit Claw Boost",
+      "Smashing Multipunch Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
   "Battle Mage": {
     "classroot": "resistance",
-    "skills": [
-      {
-        "name": "Crimson Pactum",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Death VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Union Aura Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Black Magic Altar Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Grim Reaper Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Abyssal Lightning Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Crimson Pact",
+    "ascentSkill": "Gloomy Aura",
+    "firstMastery": [
+      "HEXA Condemnation"
+    ],
+    "secondMastery": [
+      "HEXA Finishing Blow",
+      "HEXA Sweeping Staff"
+    ],
+    "thirdMastery": [
+      "HEXA Dark Shock"
+    ],
+    "fourthMastery": [
+      "HEXA Dark Genesis"
+    ],
+    "masterySkills": [
+      "HEXA Condemnation",
+      "HEXA Finishing Blow",
+      "HEXA Sweeping Staff",
+      "HEXA Dark Shock",
+      "HEXA Dark Genesis"
+    ],
+    "boostSkills": [
+      "Aura Scythe Boost",
+      "Altar of Annihilation Boost",
+      "Grim Harvest Boost",
+      "Abyssal Lightning Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
-  "Wild Hunter": {
+  "Blaster": {
     "classroot": "resistance",
-    "skills": [
-      {
-        "name": "Nature’s Belief",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Wild Vulcan VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Jaguar Storm Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Jaguar Maximum Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Wild Grenade Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Wild Vulcan Type X Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
-    ]
-  },
-  "Xenon": {
-    "classroot": "resistance",
-    "skills": [
-      {
-        "name": "Artificial Evolution",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Fuzzy Lob Masquerade VI: Snipe",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Fuzzy Lob Masquerade VI: Bombard",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Mega Smasher Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Overload Mode Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Hologram Gravity: Fusion Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Photon Ray Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Final Destroyer",
+    "ascentSkill": "Vanguard Impact",
+    "firstMastery": [
+      "HEXA Magnum Punch",
+      "HEXA Double Blast"
+    ],
+    "secondMastery": [
+      "HEXA Bunker Buster Explosion",
+      "Burst Pile Bunker"
+    ],
+    "thirdMastery": [
+      "HEXA Revolving Cannon Mastery",
+      "HEXA Hammer Smash",
+      "HEXA Shotgun Punch"
+    ],
+    "fourthMastery": [
+      "HEXA Revolving Cannon",
+      "HEXA Ballistic Hurricane"
+    ],
+    "masterySkills": [
+      "HEXA Magnum Punch",
+      "HEXA Double Blast",
+      "HEXA Bunker Buster Explosion",
+      "Burst Pile Bunker",
+      "HEXA Revolving Cannon Mastery",
+      "HEXA Hammer Smash",
+      "HEXA Shotgun Punch",
+      "HEXA Revolving Cannon",
+      "HEXA Ballistic Hurricane"
+    ],
+    "boostSkills": [
+      "Rocket Punch Boost",
+      "Gatling Punch Boost",
+      "Bullet Blast Boost",
+      "Afterimage Shock Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
   "Mechanic": {
     "classroot": "resistance",
-    "skills": [
-      {
-        "name": "Ground Zero",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Massive Fire: SPLASH-F VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Massive Fire: IRON-B VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Multiple Options: M-FL Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Micro Missile Container Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Metal Armor Full Burst Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Mecha Carrier Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Ground Zero",
+    "ascentSkill": "Metal Armor: Extermination",
+    "firstMastery": [
+      "HEXA AP Salvo Plus"
+    ],
+    "secondMastery": [
+      "HEXA Homing Beacon"
+    ],
+    "thirdMastery": [
+      "HEXA Distortion Bomb"
+    ],
+    "fourthMastery": [
+      "HEXA Robo Launcher RM7",
+      "HEXA Rock 'n Shock",
+      "HEXA Bots 'n Tots"
+    ],
+    "masterySkills": [
+      "HEXA AP Salvo Plus",
+      "HEXA Homing Beacon",
+      "HEXA Distortion Bomb",
+      "HEXA Robo Launcher RM7",
+      "HEXA Rock 'n Shock",
+      "HEXA Bots 'n Tots"
+    ],
+    "boostSkills": [
+      "Doomsday Device Boost",
+      "Mobile Missile Battery Boost",
+      "Full Metal Barrage Boost",
+      "Mecha Carrier Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Wild Hunter": {
+    "classroot": "resistance",
+    "originSkill": "Nature's Truth",
+    "ascentSkill": "Gear Storm",
+    "firstMastery": [
+      "HEXA Wild Arrow Blast"
+    ],
+    "secondMastery": [
+      "HEXA Swipe",
+      "HEXA Dash n' Slash",
+      "HEXA Sonic Roar",
+      "HEXA Jaguar Soul",
+      "HEXA Exploding Arrows",
+      "HEXA Jaguar Rampage"
+    ],
+    "thirdMastery": [
+      "HEXA Summon Jaguar"
+    ],
+    "fourthMastery": [
+      "HEXA Hunting Assistant Unit",
+      "HEXA Drill Salvo",
+      "HEXA Final Attack"
+    ],
+    "masterySkills": [
+      "HEXA Wild Arrow Blast",
+      "HEXA Swipe",
+      "HEXA Dash n' Slash",
+      "HEXA Sonic Roar",
+      "HEXA Jaguar Soul",
+      "HEXA Exploding Arrows",
+      "HEXA Jaguar Rampage",
+      "HEXA Summon Jaguar",
+      "HEXA Hunting Assistant Unit",
+      "HEXA Drill Salvo",
+      "HEXA Final Attack"
+    ],
+    "boostSkills": [
+      "Jaguar Storm Boost",
+      "Primal Fury Boost",
+      "Primal Grenade Boost",
+      "Wild Arrow Blast Type X Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Xenon": {
+    "classroot": "resistance",
+    "originSkill": "Artificial Evolution",
+    "ascentSkill": "Neoteric Trice",
+    "firstMastery": [
+      "HEXA Mecha Purge: Snipe"
+    ],
+    "secondMastery": [
+      "HEXA Triangulation",
+      "HEXA Hypogram Field"
+    ],
+    "thirdMastery": [
+      "HEXA Aegis System",
+      "HEXA Orbital Cataclysm"
+    ],
+    "fourthMastery": [
+      "HEXA Beam Dance"
+    ],
+    "masterySkills": [
+      "HEXA Mecha Purge: Snipe",
+      "HEXA Triangulation",
+      "HEXA Hypogram Field",
+      "HEXA Aegis System",
+      "HEXA Orbital Cataclysm",
+      "HEXA Beam Dance"
+    ],
+    "boostSkills": [
+      "Omega Blaster Boost",
+      "Core Overload Boost",
+      "Hypogram Field: Fusion Boost",
+      "Photon Ray Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
   "Demon Slayer": {
     "classroot": "resistance",
-    "skills": [
-      {
-        "name": "Nightmare",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Demon Impact VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Demon Awakening Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Jormungandr Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Orthrus Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Demon Bane Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Nightmare",
+    "ascentSkill": "Amethystine Intrusion",
+    "firstMastery": [
+      "HEXA Demon Impact"
+    ],
+    "secondMastery": [
+      "HEXA Demon Lash",
+      "HEXA Infernal Concussion"
+    ],
+    "thirdMastery": [
+      "HEXA Demon Cry",
+      "HEXA Metamorphosis"
+    ],
+    "fourthMastery": [
+      "HEXA Cerberus Chomp",
+      "Demonic Plume"
+    ],
+    "masterySkills": [
+      "HEXA Demon Impact",
+      "HEXA Demon Lash",
+      "HEXA Infernal Concussion",
+      "HEXA Demon Cry",
+      "HEXA Metamorphosis",
+      "HEXA Cerberus Chomp",
+      "Demonic Plume"
+    ],
+    "boostSkills": [
+      "Demon Awakening Boost",
+      "Spirit of Rage Boost",
+      "Orthrus Boost",
+      "Demon Bane Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
   "Demon Avenger": {
     "classroot": "resistance",
-    "skills": [
-      {
-        "name": "Requiem",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Shield Chasing VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Demon Frenzy Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Blood Feast Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Dimension Sword Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Revenant Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
-    ]
-  },
-  "Kaiser": {
-    "classroot": "nova",
-    "skills": [
-      {
-        "name": "Might of Nova",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Giga Slasher VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Guardian of Nova Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Will of Swords: Strike Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Draco Slasher Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Dragon Blaze Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
-    ]
-  },
-  "Kain": {
-    "classroot": "nova",
-    "skills": [
-      {
-        "name": "Annihilation",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Falling Dust VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "[Possess] Falling Dust VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "[Execute] Poison Needle VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Dragon Burst Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Fatal Blitz Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Thanatos Descent Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Grip of Agony Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
-    ]
-  },
-  "Cadena": {
-    "classroot": "nova",
-    "skills": [
-      {
-        "name": "Chain Arts: Massacre",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Chain Arts: Stroke VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Chain Arts: Fury Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "A.D Ordnance Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Chain Arts: Maelstrom Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Weapon Variety Finale Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Requiem",
+    "ascentSkill": "Rageborne Daredevil",
+    "firstMastery": [
+      "HEXA Nether Shield"
+    ],
+    "secondMastery": [
+      "HEXA Exceed: Execution"
+    ],
+    "thirdMastery": [
+      "HEXA Exceed: Lunar Slash",
+      "Maximal Exceed"
+    ],
+    "fourthMastery": [
+      "HEXA Thousand Swords",
+      "HEXA Infernal Exceed"
+    ],
+    "masterySkills": [
+      "HEXA Nether Shield",
+      "HEXA Exceed: Execution",
+      "HEXA Exceed: Lunar Slash",
+      "Maximal Exceed",
+      "HEXA Thousand Swords",
+      "HEXA Infernal Exceed"
+    ],
+    "boostSkills": [
+      "Demonic Frenzy Boost",
+      "Demonic Blast Boost",
+      "Dimensional Sword Boost",
+      "Revenant Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
   "Angelic Buster": {
     "classroot": "nova",
-    "skills": [
-      {
-        "name": "Grand Finale",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Trinity VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Energy Burst Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Spotlight Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Mascot Familiar Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Trinity Fusion Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Grand Finale",
+    "ascentSkill": "Genuine Encore",
+    "firstMastery": [
+      "HEXA Trinity"
+    ],
+    "secondMastery": [
+      "HEXA Soul Seeker"
+    ],
+    "thirdMastery": [
+      "HEXA Supreme Supernova"
+    ],
+    "fourthMastery": [
+      "HEXA Celestial Roar",
+      "Encore Ribbon"
+    ],
+    "masterySkills": [
+      "HEXA Trinity",
+      "HEXA Soul Seeker",
+      "HEXA Supreme Supernova",
+      "HEXA Celestial Roar",
+      "Encore Ribbon"
+    ],
+    "boostSkills": [
+      "Sparkle Burst Boost",
+      "Superstar Spotlight Boost",
+      "Mighty Mascot Boost",
+      "Trinity Fusion Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
-  "Zero": {
-    "classroot": "special",
-    "skills": [
-      {
-        "name": "Chrono Trigger",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Giga Crash VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Jumping Crash VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Earth Break VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Wind Cutter VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Wind Strike VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Storm Break VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Time Piece",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Limit Break Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Joint Attack Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Shadow Flash Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Ego Weapon Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+  "Kaiser": {
+    "classroot": "nova",
+    "originSkill": "Nova Triumphant",
+    "ascentSkill": "Pyro Instinct",
+    "firstMastery": [
+      "HEXA Gigas Wave"
+    ],
+    "secondMastery": [
+      "HEXA Blade Burst",
+      "HEXA Tempest Blades"
+    ],
+    "thirdMastery": [
+      "HEXA Inferno Breath"
+    ],
+    "fourthMastery": [
+      "HEXA Wing Beat",
+      "HEXA Stone Dragon"
+    ],
+    "masterySkills": [
+      "HEXA Gigas Wave",
+      "HEXA Blade Burst",
+      "HEXA Tempest Blades",
+      "HEXA Inferno Breath",
+      "HEXA Wing Beat",
+      "HEXA Stone Dragon"
+    ],
+    "boostSkills": [
+      "Nova Guardians Boost",
+      "Bladefall Boost",
+      "Draco Surge Boost",
+      "Dragonflare Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
-  "Kinesis": {
-    "classroot": "special",
-    "skills": [
-      {
-        "name": "Another Realm",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Ultimate – Material VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Psychic Tornado Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Ultimate – Moving Matter Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Ultimate – Psychic Bullet Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Law of Gravity Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+  "Cadena": {
+    "classroot": "nova",
+    "originSkill": "Chain Arts: Grand Arsenal",
+    "ascentSkill": "Brutal Ravage",
+    "firstMastery": [
+      "HEXA Chain Arts: Thrash"
+    ],
+    "secondMastery": [
+      "HEXA Muscle Memory"
+    ],
+    "thirdMastery": [
+      "HEXA Summon Scimitar",
+      "HEXA Summon Claw",
+      "HEXA Summon Shuriken",
+      "HEXA Summon Spiked Bat",
+      "HEXA Chain Arts: Crush"
+    ],
+    "fourthMastery": [
+      "HEXA Summon Shotgun",
+      "HEXA Summon Daggers",
+      "HEXA Summon Decoy Bomb",
+      "HEXA Summon Brick",
+      "HEXA Chain Arts: Beatdown",
+      "HEXA Veteran Shadowdealer"
+    ],
+    "masterySkills": [
+      "HEXA Chain Arts: Thrash",
+      "HEXA Muscle Memory",
+      "HEXA Summon Scimitar",
+      "HEXA Summon Claw",
+      "HEXA Summon Shuriken",
+      "HEXA Summon Spiked Bat",
+      "HEXA Chain Arts: Crush",
+      "HEXA Summon Shotgun",
+      "HEXA Summon Daggers",
+      "HEXA Summon Decoy Bomb",
+      "HEXA Summon Brick",
+      "HEXA Chain Arts: Beatdown",
+      "HEXA Veteran Shadowdealer"
+    ],
+    "boostSkills": [
+      "Chain Arts: Void Strike Boost",
+      "Apocalypse Cannon Boost",
+      "Chain Arts: Maelstrom Boost",
+      "Muscle Memory Finale Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Kain": {
+    "classroot": "nova",
+    "originSkill": "Total Annihilation",
+    "ascentSkill": "Malicious Flicker",
+    "firstMastery": [
+      "HEXA Falling Dust"
+    ],
+    "secondMastery": [
+      "HEXA Strike Arrow",
+      "HEXA Scattering Shot",
+      "HEXA Tearing Knife",
+      "HEXA Chain Sickle"
+    ],
+    "thirdMastery": [
+      "HEXA Dragon Fang",
+      "HEXA Shaft Break",
+      "HEXA [Posess] Shaft Break",
+      "HEXA [Execute] Phantom Blade",
+      "HEXA Lasting Grudge"
+    ],
+    "fourthMastery": [
+      "HEXA Death's Blessing",
+      "HEXA Chasing Shot",
+      "HEXA Unseen Sniper",
+      "HEXA [Posess/Execute] Unseen Sniper"
+    ],
+    "masterySkills": [
+      "HEXA Falling Dust",
+      "HEXA Strike Arrow",
+      "HEXA Scattering Shot",
+      "HEXA Tearing Knife",
+      "HEXA Chain Sickle",
+      "HEXA Dragon Fang",
+      "HEXA Shaft Break",
+      "HEXA [Posess] Shaft Break",
+      "HEXA [Execute] Phantom Blade",
+      "HEXA Lasting Grudge",
+      "HEXA Death's Blessing",
+      "HEXA Chasing Shot",
+      "HEXA Unseen Sniper",
+      "HEXA [Posess/Execute] Unseen Sniper"
+    ],
+    "boostSkills": [
+      "Dragon Burst Boost",
+      "Fatal Blitz Boost",
+      "Thanatos Descent Boost",
+      "Grip of Agony Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Kanna": {
+    "classroot": null,
+    "originSkill": "Hakumenkonmou Juubi",
+    "ascentSkill": null,
+    "firstMastery": [
+      "HEXA Shikigami Haunting"
+    ],
+    "secondMastery": [
+      "HEXA Vanquisher's Charm"
+    ],
+    "thirdMastery": [
+      "HEXA Shikigami Doppelganger",
+      "HEXA Yosuzume",
+      "HEXA Nine-Tailed Fury",
+      "HEXA Nightghost Guide"
+    ],
+    "fourthMastery": [
+      "HEXA Kishin Shoukan",
+      "HEXA Tengu Strike",
+      "HEXA Ghost Yaksha Boss"
+    ],
+    "masterySkills": [
+      "HEXA Shikigami Haunting",
+      "HEXA Vanquisher's Charm",
+      "HEXA Shikigami Doppelganger",
+      "HEXA Yosuzume",
+      "HEXA Nine-Tailed Fury",
+      "HEXA Nightghost Guide",
+      "HEXA Kishin Shoukan",
+      "HEXA Tengu Strike",
+      "HEXA Ghost Yaksha Boss"
+    ],
+    "boostSkills": [
+      "Yuki-musume Shoukan Boost",
+      "Spirit's Domain Boost",
+      "Liberated Spirit Circle Boost",
+      "Ghost Yaksha Bosses' Boss Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Hayato": {
+    "classroot": null,
+    "originSkill": "Jin Quick Draw",
+    "ascentSkill": null,
+    "firstMastery": [
+      "HEXA Rai Blade Flash",
+      "HEXA Rai Sanrenzan"
+    ],
+    "secondMastery": [
+      "HEXA Shinsoku"
+    ],
+    "thirdMastery": [
+      "HEXA Falcon's Honor",
+      "HEXA Akatsuki Trace"
+    ],
+    "fourthMastery": [
+      "HEXA Hitokiri Strike"
+    ],
+    "masterySkills": [
+      "HEXA Rai Blade Flash",
+      "HEXA Rai Sanrenzan",
+      "HEXA Shinsoku",
+      "HEXA Falcon's Honor",
+      "HEXA Akatsuki Trace",
+      "HEXA Hitokiri Strike"
+    ],
+    "boostSkills": [
+      "Battoujutsu Zankou Boost",
+      "Iaijutsu Phantom Blade Boost",
+      "Battoujutsu Ultimate Will Boost",
+      "Instant Slice Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
   "Adele": {
     "classroot": "flora",
-    "skills": [
-      {
-        "name": "Maestro",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Divide VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Shard VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Wonder VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Ruin Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Infinite Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Restore Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Storm Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
-    ]
-  },
-  "Illium": {
-    "classroot": "flora",
-    "skills": [
-      {
-        "name": "Unlimited Crystals",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Craft: Javelin VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Glory Wings: Javelin VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Crystal Ignition Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Gram Holder Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Soul of Crystal Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Crystal Gate Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
-    ]
-  },
-  "Khali": {
-    "classroot": "flora",
-    "skills": [
-      {
-        "name": "Hex: Sandstorm",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Arts: Flurry VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Arts: Crescentum VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Hex: Pandemonium Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Void Burst Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Arts: Astra Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Resonate: Ultimatum Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Maestro",
+    "ascentSkill": "Einheit",
+    "firstMastery": [
+      "HEXA Cleave",
+      "HEXA Magic Dispatch",
+      "HEXA Aetherial Arms"
+    ],
+    "secondMastery": [
+      "HEXA Hunting Decree",
+      "HEXA Plummet"
+    ],
+    "thirdMastery": [
+      "HEXA Impale",
+      "HEXA Resonance Rush",
+      "HEXA Noble Summons",
+      "HEXA Aether Bloom"
+    ],
+    "fourthMastery": [
+      "HEXA Aether Forge",
+      "HEXA Reign of Destruction",
+      "HEXA Shardbreaker"
+    ],
+    "masterySkills": [
+      "HEXA Cleave",
+      "HEXA Magic Dispatch",
+      "HEXA Aetherial Arms",
+      "HEXA Hunting Decree",
+      "HEXA Plummet",
+      "HEXA Impale",
+      "HEXA Resonance Rush",
+      "HEXA Noble Summons",
+      "HEXA Aether Bloom",
+      "HEXA Aether Forge",
+      "HEXA Reign of Destruction",
+      "HEXA Shardbreaker"
+    ],
+    "boostSkills": [
+      "Ruin Boost",
+      "Infinity Blade Boost",
+      "Legacy Restoration Boost",
+      "Storm Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
   "Ark": {
     "classroot": "flora",
-    "skills": [
-      {
-        "name": "Ancient Abyss",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Plain Charge Drive VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Scarlet Charge Drive VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Gust Charge Drive VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Abyss Charge Drive VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Awakened Abyss",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Abyssal Recall Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Infinity Spell Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Devious Nightmare/Devious Dream Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Endlessly Starving Beast Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Primordial Abyss",
+    "ascentSkill": "Whisper of the Absolute Abyss",
+    "firstMastery": [
+      "HEXA Basic Charge Drive",
+      "HEXA Scarlet Charge Drive",
+      "HEXA Gust Charge Drive",
+      "HEXA Abyssal Charge Dive",
+      "Awakened Abyss"
+    ],
+    "secondMastery": [
+      "HEXA Grievous Wound",
+      "HEXA Insatiable Hunger",
+      "HEXA Unbridled Chaos"
+    ],
+    "thirdMastery": [
+      "HEXA Vengeful Hate",
+      "HEXA Blissful Restraint",
+      "HEXA Endless Agony"
+    ],
+    "fourthMastery": [
+      "HEXA Endless Nightmare",
+      "HEXA Endless Dream"
+    ],
+    "masterySkills": [
+      "HEXA Basic Charge Drive",
+      "HEXA Scarlet Charge Drive",
+      "HEXA Gust Charge Drive",
+      "HEXA Abyssal Charge Dive",
+      "Awakened Abyss",
+      "HEXA Grievous Wound",
+      "HEXA Insatiable Hunger",
+      "HEXA Unbridled Chaos",
+      "HEXA Vengeful Hate",
+      "HEXA Blissful Restraint",
+      "HEXA Endless Agony",
+      "HEXA Endless Nightmare",
+      "HEXA Endless Dream"
+    ],
+    "boostSkills": [
+      "Abyssal Recall Boost",
+      "Infinity Spell Boost",
+      "Devious Nightmare Boost",
+      "Endlessly Starving Beast Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Illium": {
+    "classroot": "flora",
+    "originSkill": "Mytocrystal Expanse",
+    "ascentSkill": "Excidium",
+    "firstMastery": [
+      "HEXA Radiant Javelin",
+      "HEXA Radiant Enchanted Javelin",
+      "HEXA Winged Javelin",
+      "HEXA Winged Echanted Javelin"
+    ],
+    "secondMastery": [
+      "HEXA Reaction - Domination",
+      "HEXA Reaction - Destruction",
+      "HEXA Wings of Glory"
+    ],
+    "thirdMastery": [
+      "HEXA Ex",
+      "HEXA Machina",
+      "HEXA Crystal Skill - Deus"
+    ],
+    "fourthMastery": [
+      "HEXA Longinus Spear",
+      "HEXA Umbral Brand",
+      "HEXA Longinus Zone"
+    ],
+    "masterySkills": [
+      "HEXA Radiant Javelin",
+      "HEXA Radiant Enchanted Javelin",
+      "HEXA Winged Javelin",
+      "HEXA Winged Echanted Javelin",
+      "HEXA Reaction - Domination",
+      "HEXA Reaction - Destruction",
+      "HEXA Wings of Glory",
+      "HEXA Ex",
+      "HEXA Machina",
+      "HEXA Crystal Skill - Deus",
+      "HEXA Longinus Spear",
+      "HEXA Umbral Brand",
+      "HEXA Longinus Zone"
+    ],
+    "boostSkills": [
+      "Crystal Ignition Boost",
+      "Templar Knight Boost",
+      "Crystalline Spirit Boost",
+      "Crystal Gate Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Khali": {
+    "classroot": "flora",
+    "originSkill": "Hex: Sandstorm",
+    "ascentSkill": "Void Awake",
+    "firstMastery": [
+      "HEXA Arts: Flurry",
+      "HEXA Arts: Crescentum"
+    ],
+    "secondMastery": [
+      "HEXA Void Rush",
+      "HEXA Void Blitz",
+      "HEXA Chakram Split"
+    ],
+    "thirdMastery": [
+      "HEXA Hex: Chakram Sweep",
+      "HEXA Hex: Chakram Fury",
+      "HEXA Death Blossom"
+    ],
+    "fourthMastery": [
+      "HEXA Resonate",
+      "HEXA Deceiving Blade"
+    ],
+    "masterySkills": [
+      "HEXA Arts: Flurry",
+      "HEXA Arts: Crescentum",
+      "HEXA Void Rush",
+      "HEXA Void Blitz",
+      "HEXA Chakram Split",
+      "HEXA Hex: Chakram Sweep",
+      "HEXA Hex: Chakram Fury",
+      "HEXA Death Blossom",
+      "HEXA Resonate",
+      "HEXA Deceiving Blade"
+    ],
+    "boostSkills": [
+      "Hex: Pandemonium Boost",
+      "Void Burst Boost",
+      "Arts: Astra Boost",
+      "Resonate: Ultimatum Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   },
   "Hoyoung": {
     "classroot": "flora",
-    "skills": [
-      {
-        "name": "Blooming Flower World",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Essence Sprinkle VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Big Stretch Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Sun River Mountain Wind Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Surging Essence Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Winding Mountain Ridge Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Sage: Formation of Heaven and Earth",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Heaven: Consuming Flames VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Earth: Stone Tremor VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Humanity: Gold-Banded Cudgel VI",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Wonders of Heaven and Earth",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Sage: Maximum Clone Rampage Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Scroll: Tiger of Songyu Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Sage: Wrath of Gods Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      },
-      {
-        "name": "Sage: Three Paths Apparition Enhancement",
-        "maxLevel": 30,
-        "fragmentCostPerLevel": 1,
-        "energyCostPerLevel": 100
-      }
+    "originSkill": "Sage: Apotheosis",
+    "ascentSkill": "Heavenly World Swing Spirit",
+    "firstMastery": [
+      "HEXA Heaven: Consuming Flames",
+      "HEXA Earth: Stone Tremor",
+      "HEXA Humanity: Gold-Banded Cudgel"
+    ],
+    "secondMastery": [
+      "HEXA Heaven: Iron Fan Gale",
+      "HEXA Earth: Ground-Shattering Wave",
+      "HEXA Humanity: As-You-Will Fan"
+    ],
+    "thirdMastery": [
+      "HEXA Talisman: Clone",
+      "HEXA Talisman: Seeking Ghost Flame"
+    ],
+    "fourthMastery": [
+      "HEXA Scroll: Star Vortex",
+      "HEXA Scroll: Butterfly Dream"
+    ],
+    "masterySkills": [
+      "HEXA Heaven: Consuming Flames",
+      "HEXA Earth: Stone Tremor",
+      "HEXA Humanity: Gold-Banded Cudgel",
+      "HEXA Heaven: Iron Fan Gale",
+      "HEXA Earth: Ground-Shattering Wave",
+      "HEXA Humanity: As-You-Will Fan",
+      "HEXA Talisman: Clone",
+      "HEXA Talisman: Seeking Ghost Flame",
+      "HEXA Scroll: Star Vortex",
+      "HEXA Scroll: Butterfly Dream"
+    ],
+    "boostSkills": [
+      "Sage: Clone Rampage Boost",
+      "Scroll: Tiger of Songyu Boost",
+      "Sage: Wrath of Gods Boost",
+      "Sage: Three Paths Apparition Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Lara": {
+    "classroot": null,
+    "originSkill": "Universe in Bloom",
+    "ascentSkill": "Overflow",
+    "firstMastery": [
+      "HEXA Essence: Sprinkle"
+    ],
+    "secondMastery": [
+      "HEXA Dragon Vein Eruption",
+      "HEXA Heaving River",
+      "HEXA Whirlwind",
+      "HEXA Sunrise Well"
+    ],
+    "thirdMastery": [
+      "HEXA Dragon Vein Absorption",
+      "HEXA Absorption: River Puddle Douse",
+      "HEXA Absorption: Fierce Wind",
+      "HEXA Absorption: Sunlit Grain"
+    ],
+    "fourthMastery": [
+      "HEXA Wakeup Call"
+    ],
+    "masterySkills": [
+      "HEXA Essence: Sprinkle",
+      "HEXA Dragon Vein Eruption",
+      "HEXA Heaving River",
+      "HEXA Whirlwind",
+      "HEXA Sunrise Well",
+      "HEXA Dragon Vein Absorption",
+      "HEXA Absorption: River Puddle Douse",
+      "HEXA Absorption: Fierce Wind",
+      "HEXA Absorption: Sunlit Grain",
+      "HEXA Wakeup Call"
+    ],
+    "boostSkills": [
+      "Big Stretch Boost",
+      "Land's Connection Boost",
+      "Surging Essence Boost",
+      "Winding Mountain Ridge Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Kinesis": {
+    "classroot": "special",
+    "originSkill": "From Another Realm",
+    "ascentSkill": "Fractal Horizon",
+    "firstMastery": [
+      "HEXA Ultimate - Metal Press"
+    ],
+    "secondMastery": [
+      "HEXA Psychic Grab",
+      "HEXA Ultimate - Psychic Shot"
+    ],
+    "thirdMastery": [
+      "HEXA Ultimate - Trainwreck",
+      "HEXA Ultimate - B.P.M."
+    ],
+    "fourthMastery": [
+      "HEXA Kinetic Combo"
+    ],
+    "masterySkills": [
+      "HEXA Ultimate - Metal Press",
+      "HEXA Psychic Grab",
+      "HEXA Ultimate - Psychic Shot",
+      "HEXA Ultimate - Trainwreck",
+      "HEXA Ultimate - B.P.M.",
+      "HEXA Kinetic Combo"
+    ],
+    "boostSkills": [
+      "Psychic Tornado Boost",
+      "Ultimate - Mind Over Matter Boost",
+      "Ultimate - Psychic Shockwave Boost",
+      "Law of Gravity Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Zero": {
+    "classroot": "special",
+    "originSkill": "End Time",
+    "ascentSkill": "Bitemporis",
+    "firstMastery": [
+      "HEXA Giga Crash",
+      "HEXA Falling Star",
+      "HEXA Groundbreaker",
+      "HEXA Wind Cutter",
+      "HEXA Wind Striker",
+      "HEXA Storm Break",
+      "Time Piece"
+    ],
+    "secondMastery": [
+      "HEXA Spin Driver",
+      "HEXA Rolling Cross",
+      "HEXA Wheel Wind",
+      "HEXA Rolling Assault"
+    ],
+    "thirdMastery": [
+      "HEXA Flash Assault",
+      "HEXA Blade Ring",
+      "HEXA Flash Cut",
+      "HEXA Throwing Weapon"
+    ],
+    "fourthMastery": [
+      "HEXA Moon Strike",
+      "HEXA Piercing Thrust",
+      "HEXA Shadow Strike",
+      "HEXA Rising Slash",
+      "HEXA Air Raid",
+      "HEXA Shadow Rain",
+      "Infinite Resonance"
+    ],
+    "masterySkills": [
+      "HEXA Giga Crash",
+      "HEXA Falling Star",
+      "HEXA Groundbreaker",
+      "HEXA Wind Cutter",
+      "HEXA Wind Striker",
+      "HEXA Storm Break",
+      "Time Piece",
+      "HEXA Spin Driver",
+      "HEXA Rolling Cross",
+      "HEXA Wheel Wind",
+      "HEXA Rolling Assault",
+      "HEXA Flash Assault",
+      "HEXA Blade Ring",
+      "HEXA Flash Cut",
+      "HEXA Throwing Weapon",
+      "HEXA Moon Strike",
+      "HEXA Piercing Thrust",
+      "HEXA Shadow Strike",
+      "HEXA Rising Slash",
+      "HEXA Air Raid",
+      "HEXA Shadow Rain",
+      "Infinite Resonance"
+    ],
+    "boostSkills": [
+      "Chrono Break Boost",
+      "Twin Blades of Time Boost",
+      "Shadow Flash Boost",
+      "Ego Weapon Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Lynn": {
+    "classroot": null,
+    "originSkill": "Source Flow",
+    "ascentSkill": null,
+    "firstMastery": [
+      "HEXA Strike"
+    ],
+    "secondMastery": [
+      "HEXA Sneak Attack",
+      "HEXA Raid"
+    ],
+    "thirdMastery": [
+      "HEXA Peck"
+    ],
+    "fourthMastery": [
+      "HEXA [Focus] Heal",
+      "HEXA [Focus] Forest Protection",
+      "HEXA Mother Nature's Touch"
+    ],
+    "masterySkills": [
+      "HEXA Strike",
+      "HEXA Sneak Attack",
+      "HEXA Raid",
+      "HEXA Peck",
+      "HEXA [Focus] Heal",
+      "HEXA [Focus] Forest Protection",
+      "HEXA Mother Nature's Touch"
+    ],
+    "boostSkills": [
+      "Beast's Rage Boost",
+      "Beak Strike Boost",
+      "[Focus] Awaken Boost",
+      "Nature's Grace Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Mo Xuan": {
+    "classroot": null,
+    "originSkill": "Soul Art: Jianghu Dragon",
+    "ascentSkill": null,
+    "firstMastery": [
+      "HEXA Xuanshan Arts [Tian]",
+      "HEXA Xuanshan Arts [Di]"
+    ],
+    "secondMastery": [
+      "HEXA Divine Art: Howling Storm",
+      "HEXA Divine Art: Righteous Thunder"
+    ],
+    "thirdMastery": [
+      "HEXA Divine Art: Swirling Tide",
+      "HEXA Soul Art: Black Wind",
+      "HEXA Divine Art: Tearing Wind"
+    ],
+    "fourthMastery": [
+      "HEXA Secret Art: Qi Projection"
+    ],
+    "masterySkills": [
+      "HEXA Xuanshan Arts [Tian]",
+      "HEXA Xuanshan Arts [Di]",
+      "HEXA Divine Art: Howling Storm",
+      "HEXA Divine Art: Righteous Thunder",
+      "HEXA Divine Art: Swirling Tide",
+      "HEXA Soul Art: Black Wind",
+      "HEXA Divine Art: Tearing Wind",
+      "HEXA Secret Art: Qi Projection"
+    ],
+    "boostSkills": [
+      "Soul Art: Beneath Heaven Boost",
+      "Divine Art: Crashing Earth Boost",
+      "Soul Art: The Conquered Self Boost",
+      "Soul Art: The Opened Gate Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Sia Astelle": {
+    "classroot": null,
+    "originSkill": "Celestial Design",
+    "ascentSkill": null,
+    "firstMastery": [
+      "SHINE Ray"
+    ],
+    "secondMastery": [],
+    "thirdMastery": [],
+    "fourthMastery": [],
+    "masterySkills": [
+      "SHINE Ray"
+    ],
+    "boostSkills": [
+      "Shine Boost",
+      "Stellar XI - Sirius Boost",
+      "Stellar XII - Sadalsuud Boost",
+      "Savior's Circle Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
+    ]
+  },
+  "Len": {
+    "classroot": null,
+    "originSkill": "Sky Splitting Azure Dragon Sword: Ascension",
+    "ascentSkill": "Sky Splitting Azure Dragon Sword: Single Falling Plum Blossom, Heavenly Rain Humanity Desolation",
+    "firstMastery": [
+      "HEXA Plum Blossom Sword Fundamental: Relentless Slash"
+    ],
+    "secondMastery": [
+      "HEXA Lost Soul Sword Fundamental: Soul Strike"
+    ],
+    "thirdMastery": [
+      "HEXA Lost Soul Advent",
+      "HEXA Splitting Ground",
+      "HEXA Void Fang",
+      "HEXA Infinite Blades"
+    ],
+    "fourthMastery": [
+      "HEXA Plum Blossom Sword 2nd Form: Scattering Plums",
+      "HEXA Plum Blossom Sword 3rd Form: Keen Blade"
+    ],
+    "masterySkills": [
+      "HEXA Plum Blossom Sword Fundamental: Relentless Slash",
+      "HEXA Lost Soul Sword Fundamental: Soul Strike",
+      "HEXA Lost Soul Advent",
+      "HEXA Splitting Ground",
+      "HEXA Void Fang",
+      "HEXA Infinite Blades",
+      "HEXA Plum Blossom Sword 2nd Form: Scattering Plums",
+      "HEXA Plum Blossom Sword 3rd Form: Keen Blade"
+    ],
+    "boostSkills": [
+      "Plum Blossom Sword Ultimate: Plum Tree Aroma Boost",
+      "Lost Soul Awakening Boost",
+      "Plum Blossom Sword Ultimate: Dance of Annihilation Boost",
+      "Plum Blossom Sword Ultimate: Soul Blade Boost"
+    ],
+    "commonSkills": [
+      "Sol Janus"
     ]
   }
 }

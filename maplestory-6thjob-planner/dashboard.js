@@ -1,3 +1,31 @@
+let skillsData = null; // ✅ global para cachear el JSON
+let costsData = null; // ✅ cache global de costos
+
+// 🔹 Normaliza nombres de skills (ej: "Sol Janus" → "Sol_Janus")
+function normalizeSkillName(name) {
+  return name
+    .trim()
+    .replace(/\s+/g, "_")          // espacios → _
+    .replace(/[^a-zA-Z0-9_]/g, ""); // quitar caracteres raros
+}
+
+// 🔹 Normaliza nombres de clases (ej: "Arch Mage (Ice, Lightning)" → "Arch_Mage_Ice_Lightning")
+function normalizeClassName(name) {
+  return name
+    .trim()
+    .replace(/\s+/g, "_")     // espacios → _
+    .replace(/[(),]/g, "")    // quitar paréntesis y comas
+    .replace(/_{2,}/g, "_");  // evitar dobles __
+}
+
+// 🔹 Costos por tipo de skill
+const skillCosts = {
+  origin: { max: 10, frag: 5, energy: 500 },
+  ascent: { max: 10, frag: 5, energy: 500 },
+  mastery: { max: 30, frag: 2, energy: 200 },
+  boost: { max: 30, frag: 1, energy: 100 },
+  common: { max: 30, frag: 1, energy: 100 }
+};
 
 async function loadSkills() {
   const characters = JSON.parse(localStorage.getItem('characters')) || {};
@@ -23,10 +51,58 @@ async function loadSkills() {
 
       window.location.href = "index.html";
       return;
-
     }
   }
 
+  try {
+    // ✅ cargar skills.json solo la primera vez
+    if (!skillsData) {
+      const res = await fetch("data/skills.json");
+      skillsData = await res.json();
+    }
+    if (!costsData) {
+      const res = await fetch("data/costs.json");
+      costsData = await res.json();
+    }
+    const classData = skillsData[char.class];
+    if (!classData) {
+      Toastify({
+        text: `❌ Class "${char.class}" not found in skills.json`,
+        duration: 4000,
+        gravity: "top",
+        position: "right",
+        backgroundColor: "#DC2626",
+      }).showToast();
+      return;
+    }
+
+    // ✅ construir lista final de skills a mostrar (sin duplicados globales)
+    const allSkills = [
+      ...(classData.firstMastery || []),
+      ...(classData.secondMastery || []),
+      ...(classData.thirdMastery || []),
+      ...(classData.fourthMastery || []),
+      ...(classData.boostSkills || []),
+      ...(classData.commonSkills || []),
+    ];
+
+    const uniqueSkills = [...new Set(allSkills)];
+    const skills = uniqueSkills.map((name) => {
+      const safeClass = normalizeClassName(char.class);
+      const safeName = normalizeSkillName(name);
+
+      return {
+        name,
+        image: `assets/skills/${safeClass}/Skill_${safeName}.png`,
+        maxLevel: 30,
+        fragmentCostPerLevel: 1,
+        energyCostPerLevel: 100,
+      };
+    });
+
+  } catch (err) {
+    console.error("Error loading skills:", err);
+  }
 
   // Mostrar encabezado con datos del personaje
   document.getElementById('charName').textContent = ign;
@@ -43,46 +119,208 @@ async function loadSkills() {
     document.getElementById('charMeta').style.display = '';
   }
 
-  // Cargar habilidades
-  const res = await fetch('data/skills.json');
-  const data = await res.json();
-  const classData = data[char.class];
-  const skills = classData?.skills;
-
-  if (!skills) {
-    Toastify({
-      text: `❌ Class "${char.class}" not found in skills.json`,
-      duration: 4000,
-      gravity: "top",
-      position: "right",
-      backgroundColor: "#DC2626", // rojo
-    }).showToast();
-    return;
-  }
-
   const tbody = document.getElementById('skillsTable');
   tbody.innerHTML = '';
 
-  skills.forEach((skill) => {
-    const currentLevel = char.skills?.[skill.name] || 0;
-    const remainingLevels = skill.maxLevel - currentLevel;
-    const fragCost = remainingLevels * skill.fragmentCostPerLevel;
-    const energyCost = remainingLevels * skill.energyCostPerLevel;
+  // Función auxiliar para renderizar grupo de skills
+  function renderGroup(title, skillsArr, className, ign, char, renderedSkills, grouped = false, type = "common") {
+    if (!skillsArr || skillsArr.length === 0) return;
 
-    const row = document.createElement('tr');
-    row.innerHTML = `
-      <td class="px-4 py-2">${skill.name}</td>
+    // Mastery → una sola fila aunque haya varias skills
+    if (grouped) {
+      const primarySkill = skillsArr[0];
+      const otherSkills = skillsArr.slice(1);
+
+      const normalized = normalizeSkillName(primarySkill);
+      if (renderedSkills.has(normalized)) return;
+      renderedSkills.add(normalized);
+
+      const currentLevel = char.skills?.[primarySkill] || 0;
+      const { maxLevel, frags, energy } = getRemainingCost(type, currentLevel);
+
+      const desiredLevel = char.desired?.[primarySkill] || currentLevel;
+      const { frags: fragsToDesired } = getCostToDesired(type, currentLevel, desiredLevel);
+
+      const safeName = normalizeSkillName(primarySkill);
+
+      const headerRow = document.createElement("tr");
+      headerRow.innerHTML = `
+      <td colspan="6" class="bg-gray-900 text-indigo-400 font-semibold px-4 py-2">
+        ${title}
+        ${type === "ascent" ? `<span class="text-gray-400 ml-2 text-sm">(🚧 Coming Soon)</span>` : ""}
+      </td>
+    `;
+      tbody.appendChild(headerRow);
+
+      const row = document.createElement("tr");
+      row.innerHTML = `
+      <td class="px-4 py-2 flex items-center gap-2">
+        <img src="assets/skills/${className}/Skill_${safeName}.png" 
+             alt="${primarySkill}" class="w-8 h-8 rounded shadow"/>
+        <span>${primarySkill}</span>
+        ${otherSkills.length > 0 ? `<span class="text-gray-400 text-sm">(+ ${otherSkills.join(", ")})</span>` : ""}
+      </td>
       <td class="px-4 py-2">
-        <input type="number" min="0" max="${skill.maxLevel}" value="${currentLevel}" 
-               onchange="updateSkillLevel('${ign}', '${skill.name}', this.value)" 
+        <input type="number" min="0" max="${maxLevel}" value="${currentLevel}" 
+               onchange="updateSkillLevel('${ign}', '${primarySkill}', this.value)" 
                class="w-16 px-2 py-1 bg-gray-800 border border-gray-600 rounded text-white">
       </td>
-      <td class="px-4 py-2">${skill.maxLevel}</td>
-      <td class="px-4 py-2">${fragCost}</td>
-      <td class="px-4 py-2">${energyCost}</td>
+      <td class="px-4 py-2">
+        <input type="number" min="${currentLevel}" max="${maxLevel}" value="${desiredLevel}" 
+               onchange="updateDesiredLevel('${ign}', '${primarySkill}', this.value)" 
+               class="w-16 px-2 py-1 bg-gray-800 border border-gray-600 rounded text-white">
+      </td>
+      <td class="px-4 py-2">${fragsToDesired}</td>
+      <td class="px-4 py-2">${frags}</td>
+      <td class="px-4 py-2">${energy}</td>
     `;
-    tbody.appendChild(row);
-  });
+      tbody.appendChild(row);
+      return;
+    }
+
+    // No grouped (Origin / Ascent / Boost / Common → individuales)
+    const uniqueSkills = [...new Set(skillsArr.filter(Boolean))].filter((s) => {
+      const normalized = normalizeSkillName(s);
+      if (renderedSkills.has(normalized)) return false;
+      renderedSkills.add(normalized);
+      return true;
+    });
+
+    if (uniqueSkills.length === 0) return;
+
+    const headerRow = document.createElement("tr");
+    headerRow.innerHTML = `
+    <td colspan="6" class="bg-gray-900 text-indigo-400 font-semibold px-4 py-2">
+      ${title}
+      ${type === "ascent" ? `<span class="text-gray-400 ml-2 text-sm">(🚧 Coming Soon)</span>` : ""}
+    </td>
+  `;
+    tbody.appendChild(headerRow);
+
+    uniqueSkills.forEach((skillName) => {
+      const currentLevel = char.skills?.[skillName] || 0;
+      const { maxLevel, frags, energy } = getRemainingCost(type, currentLevel);
+
+      const desiredLevel = char.desired?.[skillName] || currentLevel;
+      const { frags: fragsToDesired } = getCostToDesired(type, currentLevel, desiredLevel);
+
+      const safeName = normalizeSkillName(skillName);
+
+      const row = document.createElement("tr");
+      row.innerHTML = `
+      <td class="px-4 py-2 flex items-center gap-2 ${type === "ascent" ? "text-gray-500" : ""}">
+        <img src="assets/skills/${className}/Skill_${safeName}.png" 
+             alt="${skillName}" class="w-8 h-8 rounded shadow ${type === "ascent" ? "opacity-50" : ""}"/>
+        <span>${skillName}</span>
+      </td>
+      <td class="px-4 py-2">
+        ${type === "ascent"
+          ? `<span class="text-gray-500 italic">-</span>`
+          : `<input type="number" min="0" max="${maxLevel}" value="${currentLevel}" 
+                   onchange="updateSkillLevel('${ign}', '${skillName}', this.value)" 
+                   class="w-16 px-2 py-1 bg-gray-800 border border-gray-600 rounded text-white">`
+        }
+      </td>
+      <td class="px-4 py-2">
+        ${type === "ascent"
+          ? `<span class="text-gray-500 italic">-</span>`
+          : `<input type="number" min="${currentLevel}" max="${maxLevel}" value="${desiredLevel}" 
+                   onchange="updateDesiredLevel('${ign}', '${skillName}', this.value)" 
+                   class="w-16 px-2 py-1 bg-gray-800 border border-gray-600 rounded text-white">`
+        }
+      </td>
+      <td class="px-4 py-2">${type === "ascent" ? "-" : fragsToDesired}</td>
+      <td class="px-4 py-2">${type === "ascent" ? "-" : frags}</td>
+      <td class="px-4 py-2">${type === "ascent" ? "-" : energy}</td>
+    `;
+      tbody.appendChild(row);
+    });
+  }
+
+  function updateDesiredLevel(ign, skillName, desiredLevel) {
+    const desiredNum = parseInt(desiredLevel);
+    if (isNaN(desiredNum)) return;
+
+    const characters = JSON.parse(localStorage.getItem('characters')) || {};
+    if (!characters[ign]) return;
+
+    const currentLevel = characters[ign].skills?.[skillName] || 0;
+
+    // 🔹 Validación: Desired < Current
+    if (desiredNum < currentLevel) {
+      Toastify({
+        text: "❌ Cannot be lower than current Lv",
+        duration: 3000,
+        gravity: "top",
+        position: "right",
+        backgroundColor: "#DC2626",
+      }).showToast();
+
+      // 🔹 Restaurar el valor en el input
+      setTimeout(() => loadSkills(), 100);
+      return;
+    }
+
+    characters[ign].desired = characters[ign].desired || {};
+    characters[ign].desired[skillName] = desiredNum;
+    localStorage.setItem('characters', JSON.stringify(characters));
+    loadSkills();
+  }
+
+  // 👉 Render dinámico por categorías
+  const renderedSkills = new Set();
+  const className = char.class;
+  const classData = skillsData[className];
+
+  renderGroup("Origin Skill", [classData.originSkill], className, ign, char, renderedSkills, false, "origin");
+  renderGroup("Ascent Skill", [classData.ascentSkill], className, ign, char, renderedSkills, false, "ascent");
+
+  renderGroup("First Mastery", classData.firstMastery, className, ign, char, renderedSkills, true, "mastery");
+  renderGroup("Second Mastery", classData.secondMastery, className, ign, char, renderedSkills, true, "mastery");
+  renderGroup("Third Mastery", classData.thirdMastery, className, ign, char, renderedSkills, true, "mastery");
+  renderGroup("Fourth Mastery", classData.fourthMastery, className, ign, char, renderedSkills, true, "mastery");
+
+  renderGroup("Boost Skills", classData.boostSkills, className, ign, char, renderedSkills, false, "boost");
+  renderGroup("Common Skills", classData.commonSkills, className, ign, char, renderedSkills, false, "common");
+}
+
+function getRemainingCost(type, currentLevel) {
+  if (!costsData || !costsData[type]) return { maxLevel: 0, frags: 0, energy: 0 };
+
+  const costTable = costsData[type].levels;
+  const max = costsData[type].max;
+  let frags = 0;
+  let energy = 0;
+
+  for (let lvl = currentLevel + 1; lvl <= max; lvl++) {
+    if (costTable[lvl]) {
+      frags += costTable[lvl].frags;
+      energy += costTable[lvl].energy;
+    }
+  }
+
+  return { maxLevel: max, frags, energy };
+}
+
+// 🔹 NUEVA: calcular costo hasta el desired level
+function getCostToDesired(type, currentLevel, desiredLevel) {
+  if (!costsData || !costsData[type]) return { frags: 0, energy: 0 };
+
+  const costTable = costsData[type].levels;
+  const max = costsData[type].max;
+
+  let frags = 0;
+  let energy = 0;
+  const target = Math.min(desiredLevel, max);
+
+  for (let lvl = currentLevel + 1; lvl <= target; lvl++) {
+    if (costTable[lvl]) {
+      frags += costTable[lvl].frags;
+      energy += costTable[lvl].energy;
+    }
+  }
+
+  return { frags, energy };
 }
 
 function updateSkillLevel(ign, skillName, level) {
@@ -92,12 +330,50 @@ function updateSkillLevel(ign, skillName, level) {
   const characters = JSON.parse(localStorage.getItem('characters')) || {};
   if (!characters[ign]) return;
 
+  // 🔹 Guardar Current Lv
   characters[ign].skills = characters[ign].skills || {};
   characters[ign].skills[skillName] = levelNum;
+
+  // 🔹 Asegurar que Desired Lv nunca sea menor que Current Lv
+  characters[ign].desired = characters[ign].desired || {};
+  if (!characters[ign].desired[skillName] || characters[ign].desired[skillName] < levelNum) {
+    characters[ign].desired[skillName] = levelNum;
+  }
+
   localStorage.setItem('characters', JSON.stringify(characters));
   loadSkills();
 }
 
+
+function updateDesiredLevel(ign, skillName, desiredLevel) {
+  const desiredNum = parseInt(desiredLevel);
+  if (isNaN(desiredNum)) return;
+
+  const characters = JSON.parse(localStorage.getItem('characters')) || {};
+  if (!characters[ign]) return;
+
+  const currentLevel = characters[ign].skills?.[skillName] || 0;
+
+  // 🔹 Validación: Desired < Current
+  if (desiredNum < currentLevel) {
+    Toastify({
+      text: "❌ Cannot be lower than current Lv",
+      duration: 3000,
+      gravity: "top",
+      position: "right",
+      backgroundColor: "#DC2626",
+    }).showToast();
+
+    // 🔹 Restaurar el valor en el input
+    setTimeout(() => loadSkills(), 100);
+    return;
+  }
+
+  characters[ign].desired = characters[ign].desired || {};
+  characters[ign].desired[skillName] = desiredNum;
+  localStorage.setItem('characters', JSON.stringify(characters));
+  loadSkills();
+}
 
 loadSkills();
 
@@ -783,3 +1059,47 @@ function toCanon(v) {
   return CANON_MAP[String(v || '').trim().toLowerCase()] || '';
 }
 
+function calcFragsSpent(ign) {
+  const characters = JSON.parse(localStorage.getItem("characters")) || {};
+  if (!characters[ign]) return;
+
+  const char = characters[ign];
+  const classData = skillsData[char.class];
+  if (!classData) return;
+
+  let totalFragsSpent = 0;
+
+  // 🔹 todas las skills de la clase
+  const allSkills = [
+    ...(classData.originSkill ? [classData.originSkill] : []),
+    ...(classData.ascentSkill ? [classData.ascentSkill] : []),
+    ...(classData.firstMastery || []),
+    ...(classData.secondMastery || []),
+    ...(classData.thirdMastery || []),
+    ...(classData.fourthMastery || []),
+    ...(classData.boostSkills || []),
+    ...(classData.commonSkills || []),
+  ];
+
+  const uniqueSkills = [...new Set(allSkills.filter(Boolean))];
+
+  uniqueSkills.forEach((skillName) => {
+    const currentLevel = char.skills?.[skillName] || 0;
+    const skillType = detectSkillType(skillName, classData);
+    const costTable = costsData[skillType].levels;
+
+    // 🔹 sumar frags gastados desde Lv1 hasta Current Lv
+    for (let lvl = 1; lvl <= currentLevel; lvl++) {
+      if (costTable[lvl]) {
+        totalFragsSpent += costTable[lvl].frags;
+      }
+    }
+  });
+
+  // Mostrar el total en el span
+  document.getElementById("totalFragments").textContent = totalFragsSpent;
+}
+document.getElementById("recalcFragmentsBtn").addEventListener("click", () => {
+  const ign = localStorage.getItem("currentCharacter");
+  calcFragsSpent(ign);
+});

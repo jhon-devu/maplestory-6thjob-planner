@@ -1,19 +1,19 @@
 (() => {
     const SYMBOLS = [
         // Arcane
-        { key: 'arcane_vj', name: 'Vanishing Journey', type: 'arcane', icon: 'assets/arcane_vj.webp' },
-        { key: 'arcane_cc', name: 'Chu Chu Island', type: 'arcane', icon: 'assets/arcane_cc.webp' },
-        { key: 'arcane_ll', name: 'Lachelein', type: 'arcane', icon: 'assets/arcane_ll.webp' },
-        { key: 'arcane_ar', name: 'Arcana', type: 'arcane', icon: 'assets/arcane_ar.webp' },
-        { key: 'arcane_ms', name: 'Morass', type: 'arcane', icon: 'assets/arcane_ms.webp' },
-        { key: 'arcane_es', name: 'Esfera', type: 'arcane', icon: 'assets/arcane_es.webp' },
+        { key: 'arcane_vj', name: 'Vanishing Journey', type: 'arcane', icon: 'assets/symbols/arcane_vj.webp' },
+        { key: 'arcane_cc', name: 'Chu Chu Island', type: 'arcane', icon: 'assets/symbols/arcane_cc.webp' },
+        { key: 'arcane_ll', name: 'Lachelein', type: 'arcane', icon: 'assets/symbols/arcane_ll.webp' },
+        { key: 'arcane_ar', name: 'Arcana', type: 'arcane', icon: 'assets/symbols/arcane_ar.webp' },
+        { key: 'arcane_ms', name: 'Morass', type: 'arcane', icon: 'assets/symbols/arcane_ms.webp' },
+        { key: 'arcane_es', name: 'Esfera', type: 'arcane', icon: 'assets/symbols/arcane_es.webp' },
         // Sacred
-        { key: 'sacred_ce', name: 'Cernium', type: 'sacred', icon: 'assets/sacred_ce.webp' },
-        { key: 'sacred_ha', name: 'Hotel Arcus', type: 'sacred', icon: 'assets/sacred_ha.webp' },
-        { key: 'sacred_od', name: 'Odium', type: 'sacred', icon: 'assets/sacred_od.webp' },
-        { key: 'sacred_sh', name: 'Shangri-La', type: 'sacred', icon: 'assets/sacred_sh.webp' },
-        { key: 'sacred_ar', name: 'Arteria', type: 'sacred', icon: 'assets/sacred_ar.webp' },
-        { key: 'sacred_ca', name: 'Carcion', type: 'sacred', icon: 'assets/sacred_ca.webp' },
+        { key: 'sacred_ce', name: 'Cernium', type: 'sacred', icon: 'assets/symbols/sacred_ce.webp' },
+        { key: 'sacred_ha', name: 'Hotel Arcus', type: 'sacred', icon: 'assets/symbols/sacred_ha.webp' },
+        { key: 'sacred_od', name: 'Odium', type: 'sacred', icon: 'assets/symbols/sacred_od.webp' },
+        { key: 'sacred_sh', name: 'Shangri-La', type: 'sacred', icon: 'assets/symbols/sacred_sh.webp' },
+        { key: 'sacred_ar', name: 'Arteria', type: 'sacred', icon: 'assets/symbols/sacred_ar.webp' },
+        { key: 'sacred_ca', name: 'Carcion', type: 'sacred', icon: 'assets/symbols/sacred_ca.webp' },
     ];
 
     const STORAGE_KEY = 'symbolsProgress';
